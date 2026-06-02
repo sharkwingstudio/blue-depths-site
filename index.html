@@ -3,9 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blue Depths Wiki</title>
+    <link rel="stylesheet" href="css/default.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Mobs</a></li>
+                <li><a href="index.html">Blocks</a></li>
+                <li><a href="index.html">Items</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="intro">
+            <p>
+                Hello! Welcome to the Blue Depths official wiki. Here is where you will be able to find everything you need
+                know about the Blue Depths datapack available for Minecraft Java Edition. You will be able to find in-depth
+                detail about the various mobs (such as the sharks, orcas, jellyfish, etc.), items, blocks, and mechanics added
+                by the datapack. If you have any further questions about the datapack, suggestions, or if you feel like something
+                is missing or wrong, please let me know via the Google Form!
+            </p>
+            <h2>Links:</h2>
+            <div class="links-container">
+                <a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">
+                    <img src="images/pmc_page.png" alt="Planet Minecraft Redirect" draggable="false">
+                </a>
+                <a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">
+                    <img src="images/download_modrinth.png" alt="Modrinth Download Redirect" draggable="false">
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">
+                    <img src="images/feedback_page.png" alt="Feedback and Suggestions Redirect" draggable="false">
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Latest: Update v1.1.0 now Live!</h2>
+            <img src="images/update_thumbnail.png" alt="Blue Depths 'Roaring Rivers Part 1: Beneath the Surface' Update Thumbnail" draggable="false" class="page-thumbnail">
+            <h3>Roaring Rivers Part 1: Below the Surface</h3>
+            <p>
+                The first update to Blue Depths is now live: Roaring Rivers Part 1! Part 1: Below the Surface focuses on expanding 
+                the overall theme of Roaring Rivers, increasing biodiversity of the river biome, which was pretty lackluster before. 
+                The update focuses on not only adding new content, but also rebalancing, making technical changes, and fixing some 
+                bugs. I will be monitoring the feedback channels for any requested changes like spawn adjustments before working on 
+                part 2, so please leave any suggestions either on Planet Minecraft or the Google Forms!
+            </p>
+            <h4>What's New:</h4>
+            <ul>
+                <li>Largemouth Bass
+                    <ul>
+                        <li>Spawns exclusively in rivers</li>
+                        <li>Can be bucketed for easier transportation and kept as a pet</li>
+                        <li>New Items
+                            <ul>
+                                <li>Bucket of Largemouth Bass</li>
+                                <li>Raw Largemouth Bass (Item Drop)</li>
+                                <li>Cooked Largemouth Bass</li>
+                                    <ul>
+                                        <li>Can be cooked inside the Deep Blue Grill in the same fashion as other mobs that drop new 
+                                            food in this datapack</li>
+                                    </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Archerfish
+                    <ul>
+                        <li>Exclusively spawns in rivers</li>
+                        <li>Can be bucketed for easier transportation and kept as a pet</li>
+                        <li>Can spit water at insect mobs and players
+                            <ul>
+                                <li>Prioritizes insects, even if players are nearby</li>
+                                <li>If no insect mobs are nearby, and a player out of water is close by, that player will be 
+                                    targeted</li>
+                                <li>Deals little damage to players, but can be devastating to insect mobs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Bull Shark
+                    <ul>
+                        <li>Spawns in lukewarm oceans and rivers</li>
+                        <li>Becomes aggressive if player stays too close for too long while in water
+                            <ul>
+                                <li>Will give the player a warning if sticking around too long (bubbles and growl)</li>
+                                <li>Once player leaves shark alone, it's temper will slowly fade away</li>
+                            </ul>
+                        </li>
+                        <li>Item Drops
+                            <ul>
+                                <li>Bull Shark Pup</li>
+                                <li>Bull Shark Tooth</li>
+                            </ul>
+                        </li>
+                        <li>Added the Bull Shark Pup
+                            <ul>
+                                <li>Aggressive towards players</li>
+                                <li>Won't grow by itself over time, player needs to feed it in order to trigger growth</li>
+                                <li>Will eat Largemouth Bass, salmon, and tropical fish if thrown at them</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>New Commands
+                    <ul>
+                        <li>Added a new summon command
+                            <ul>
+                                <li>Can be used to spawn in the new creatures added for Blue Depths</li>
+                                <li>Simple use /function blue_depths:summon/
+                                    <ul>
+                                        <li>A list of different mobs will appear and autofill depending on what you want to spawn</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Added a new display command
+                            <ul>
+                                <li>If you would like to display the models of these mobs, you can use this command to do so</li>
+                                <li>Simply use /function blue_depths:display/
+                                    <ul>
+                                        <li>A list of different mobs will appear and autofill depending on what you want to display</li>
+                                    </ul>
+                                </li>
+                                <li>To get rid of these models, simply use /function blue_depths:display/kill_display
+                                    <ul>
+                                        <li>It will destroy all nearby displays</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Added a new easter egg
+                    <ul>
+                        <li>A new easter egg can be found for players to find, making Blue Depths have a total of 2 easter eggs so far.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>QOL changes:</h4>
+            <ul>
+                <li>Catfish changes
+                    <ul>
+                        <li>Spawn rate has been decreased by 33.3%
+                            <ul><li>Back to the same spawn rate as it did in the initial release of Blue Depths (1.0.0)</li></ul>
+                        </li>
+                        <li>Cooked Catfish Saturation has been buffed
+                            <ul><li>Went from a value of 6 to 8</li></ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Great White Shark Pup changes
+                    <ul>
+                        <li>Great White Shark Pups are no longer aggressive towards players</li>
+                        <li>IMPORTANT: Great White Shark Pups that existed in prior worlds after update is installed will have their 
+                            growth progress reset
+                            <ul><li>This has no affect on fully grown Great White Sharks, they will not have their growth reset and 
+                                will act the same as before</li></ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>Bug Fixes</h4>
+            <ul>
+                <li>Fixed potential issue of bucket usage on nonbucketable Blue Depths mobs</li>
+                <li>Fixed a bug where some fish (mostly the sturgeon) would swim in directions they aren't facing</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

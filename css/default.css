@@ -1,0 +1,153 @@
+
+/* -------------------------------------- Default CSS Items -------------------------------------- */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/background.png"); /*Adds image to the background*/
+    background-attachment: fixed; /*Prevents the image from moving when scrolling through the page*/
+    color: aquamarine;
+    margin: 0; /*Removes spacing between the sides*/
+}
+
+header {
+    background-color: #000036;
+    margin-bottom: 1em;
+    width: 100%;
+
+    /*Allows the header to stay at the top of the page*/
+    position: sticky;
+    top: 0;
+
+    z-index: 1; /*Prevents other items covering the header if interacted with*/
+}
+
+.main-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #87cefa;
+    padding-top: 0.5em;
+    text-align: center;
+    border-radius: 0.2em;
+    margin: 0; /*Removes the spacing from the top of the h1 to the top of the screen*/
+}
+
+main {
+    background-color: rgba(0, 0, 54, 0.7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    border-radius: 0.5em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* -------------------------------------- Navigation Bar -------------------------------------- */
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    border-radius: 0.2em;
+}
+
+.navbar ul {
+    border-top: 0.1em solid white;
+    list-style-type: none;
+    overflow: hidden; /*Prevents list items from spilling out of the container*/
+    display: flex; /*Allows the navigation items to display side by side*/
+    justify-content: center; /*Centers navigation items*/
+    padding: 0; /*Removes the left padding so that the container actually centers the nav items*/
+    margin-bottom: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: aqua;
+    transition: all 0.3s ease;
+    padding: 1em;
+}
+
+.navbar ul li a:hover {
+    background-color: gray;
+}
+
+/* -------------------------------------- Introductory Stuff -------------------------------------- */
+
+.intro {
+    border-bottom: 0.1em solid white;
+}
+
+.links-container {
+    /*Center links*/
+    text-align: center;
+
+    /*Other items*/
+    margin-bottom: 0.5em;
+}
+
+.links-container img {
+    border: aqua solid 0.1em;
+    border-radius: 0.8em;
+    max-width: 20%;
+    margin: 0.7em;
+
+    transition: transform 0.3s ease; /* Controls speed and smoothness */
+}
+
+.links-container img:hover {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------- Main Content -------------------------------------- */
+
+.main-content {
+    margin-top: 1.5em;
+}
+
+.page-thumbnail {
+    display: block; /* Allows the image to become center*/
+    margin: 0 auto; /* Center image */
+    border: black solid 0.2em;
+    border-radius: 0.1em;
+}
+
+/* -------------------------------------- Footer Content -------------------------------------- */
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000036;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0.5em;
+    border-bottom: white solid 0.05em;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 0.2em;
+}
+
+footer ul {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    display: flex;
+    margin-bottom: 0; /*Removes gap between bottom of footer and page*/
+    list-style-type: none;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: aqua;
+    transition: all 0.3s ease; /* Controls speed and smoothness */
+}
+
+footer a:hover {
+    color: red;
+}
