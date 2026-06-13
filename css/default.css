@@ -7,6 +7,10 @@ body {
     background-attachment: fixed; /*Prevents the image from moving when scrolling through the page*/
     color: aquamarine;
     margin: 0; /*Removes spacing between the sides*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -33,15 +37,12 @@ header {
 main {
     background-color: rgba(0, 0, 54, 0.7);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    margin: 0 auto; /* Center Everything first */
+    padding: 0.5em 2.5em 0.5em 2.5em; /*This goes: top right bottom left*/
     border-radius: 0.5em;
     line-height: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em; /* Apply a margin fix to the bottom after initial margin is set for centering */
     width: 85%;
-    margin: 0 auto;
 }
 
 /* -------------------------------------- Navigation Bar -------------------------------------- */
@@ -106,6 +107,7 @@ main {
     margin-top: 1.5em;
 }
 
+/*---- Main image for home page ----*/
 .page-thumbnail {
     display: block; /* Allows the image to become center*/
     margin: 0 auto; /* Center image */
@@ -113,12 +115,262 @@ main {
     border-radius: 0.1em;
 }
 
+/*------------- Navigation Page Stuff -------------*/
+
+/*---- CSS for the links on navigation pages ----*/
+.nav-link a {
+    text-decoration: none;
+    color: aqua;
+    transition: all 0.3s ease; /* Controls speed and smoothness */
+}
+
+.nav-link a:hover {
+    color: red;
+}
+
+/*------------- Article Stuff -------------*/
+
+.article-title {
+    font-size: 2em;
+}
+
+.article-section {
+    border-bottom: aqua solid 0.1em;
+    overflow: hidden; /* Allows spacing between the section underline and info-box if they touch*/
+}
+
+.sub-section {
+    text-decoration: underline;
+}
+
+.suber-section {
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+.item-img {
+    background-color: rgba(0, 0, 54, 0.7);
+    padding: 0.5em;
+    border: black solid 0.2em;
+    border-radius: 0.1em;
+}
+
+.class-recipes {
+    display: inline-block;
+}
+
+.article-link {
+    color: #00b7eb;
+    transition: all 0.3s ease; /* Controls speed and smoothness */
+}
+
+.article-link:hover {
+    color: aqua;
+}
+
+/*---- Info Box ----*/
+
+.info-box {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    max-width: 35%;
+    border: black solid 0.3em;
+    border-radius: 0.2em;
+    background-color: #4c516d;
+    color: white;
+    padding: 1em;
+    overflow: auto; /*Prevents items like images from leaking out of the container*/
+}
+
+.info-box h3 {
+    text-align: center;
+}
+
+.info-box img {
+    /*Center image horizontally*/
+    display: block;
+    margin: auto;
+
+
+    width: 80%;
+    border: black solid 0.2em;
+    border-radius: 0.2em;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease; /* Controls speed and smoothness */
+}
+
+.info-box a:hover {
+    color: #87cefa;
+}
+
+.bd-link a {
+    color: #00b7eb;
+    transition: all 0.3s ease; /* Controls speed and smoothness */
+}
+
+.bd-link a:hover {
+    color: coral;
+}
+
+/*-- Info Box Sections --*/
+.info-section h4 {
+    border-bottom: #87ceeb solid 0.1em;
+    font-size: 1.2em;
+    color: #87ceeb;
+}
+
+/*---- Chance Tables ----*/
+table.chance-table {
+    background-color: #1e90ff;
+    color: black;
+    text-align: center;
+}
+
+.chance-table,
+.chance-table th,
+.chance-table td {
+    border: 0.2em solid black;
+}
+
+.chance-table th {
+    background-color: #191970;
+    color: aqua;
+}
+
+.chance-col {
+    background-color: #4c516d;
+    color: aqua;
+}
+
+/*---- History Table ----*/
+table.history-table {
+    background-color: #1e90ff;
+    color: black;
+}
+
+.history-table,
+.history-table th,
+.history-table td {
+    border: 0.2em solid black;
+}
+
+.history-table th,
+.history-table td {
+    padding: 0.3em;
+}
+
+.history-table th {
+    background-color: #191970;
+    color: aliceblue;
+}
+
+.history-col {
+    background-color: #4c516d;
+    color: aliceblue;
+}
+
+/*---- Gallery Stuff ----*/
+.gallery-container {
+    width: 100%;
+    overflow: auto;
+}
+
+.gallery-selection {
+    margin: 0.5em;
+    display: inline-block; /*Allows non-leaking content, resize, and displaying side-by-side*/
+    vertical-align: top; /*Prevents selection from appearing lower than another due to inline-block*/
+    max-width: 20%; /*Allows the container to not take up the entire width of the parent container*/
+    height: 300px;
+    border: aqua solid 0.1em;
+    border-radius: 0.2em;
+    padding: 1.2em;
+}
+
+.gallery-selection img {
+    /*Center image horizontally*/
+    display: block;
+    margin: auto;
+
+    margin-bottom: 1em;
+    max-width: 100%; /*Allows the image to fit entire space it occupies*/
+    transition: transform 0.3s ease; /* Controls speed and smoothness */
+    border: #00b7eb solid 0.1em;
+    border-radius: 0.2em;
+}
+
+.gallery-selection img:hover {
+    transform: scale(1.05);
+}
+
+/*---- Image Expand Stuff ----*/
+#img-expand {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    z-index: 2;
+}
+
+.hidden-display {
+    display: none; /*Keep container hidden at first*/
+}
+
+.img-contents {
+    width: fit-content;
+    height: fit-content;
+
+    max-width: 95vw;
+    max-height: 95vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-contents img {
+    /*Center image horizontally*/
+    display: block;
+    margin: auto;
+
+    max-width: 95vw;
+    max-height: calc(95vh - 2.5rem); /* leaves room for close button */
+
+    clear: both; /*Allows button to stay on top of the image*/
+}
+
+#close-img { /*CSS for the button*/
+    background: none;
+    border: none;
+    border-bottom: white solid 0.1em;
+    color: white;
+    margin-bottom: 0.4em;
+
+
+    /* Toward the right*/
+    float: right;
+
+    transition: all 0.3s ease; /* Controls speed and smoothness */
+}
+
+#close-img:hover {
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+
 /* -------------------------------------- Footer Content -------------------------------------- */
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #000036;
-    margin-top: 1em;
+    margin-top: auto;
     padding-bottom: 1em;
+    
 }
 
 footer h1 {

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Catfish</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header>
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Catfish</h2>
+        <aside class="info-box">
+            <h3>Catfish</h3>
+            <img src="../../images/mobs/catfish.png" alt="Blue Depths Catfish Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                <p><b>Health: </b>5 HP (2.5 hearts)</p>
+                <p><b>Speed: </b>Medium</p>
+                <p><b>Hit Box Size: </b> 1 block (approximately)</p>
+                <p><b>Rarity: </b>Uncommon</p>
+                <h4>Basic Info</h4>
+                <p><b>Classification: </b>Fish</p>
+                <p><b>Temperament: </b>Passive</p>
+                <p><b>Behavior: </b>Bottom-dweller</p>
+                <p><b>Water Type: </b>Fresh water, brackish water</p>
+                <h4>Spawns In</h4>
+                <p class="bd-link"><a href="../biomes/rivers.html">Rivers</a></p>
+                <p class="bd-link"><a href="../biomes/mangrove_swamp.html">Mangrove Swamps</a></p>
+                <h4>Usable Items</h4>
+                <ul>
+                    <li>Water Bucket</li>
+                </ul>
+            </div>
+        </aside>
+
+        <p>
+            The catfish is an uncommon fresh/brackish water fish that can be used as a source of food or be kept as a pet by the
+            player. It is passive towards the player and can drop items such as bone meal or raw catfish.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Catfish are uncommon solitary fish that spawn exclusively in river and mangrove swamp biomes. The way catfish spawn
+                is by replacing some naturally spawning aquatic mob. In mangrove swamps, each tropical fish has a chance to be replaced 
+                by a catfish. In rivers, each salmon has a chance to be replaced instead. The table below shows the spawn rates of the 
+                catfish in the biomes it spawns in.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">River</td>
+                    <td>15% (Salmon)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Mangrove Swamp</td>
+                    <td>20% (Tropical Fish)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                The catfish can drop 2 items, bone meal or raw catfish. Upon death, it will always drop 1 raw catfish (only if the player
+                kills it). Similarly, the catfish will only drop 1-2 bone meal (equal chance for both) if the player kills it. Below is a
+                table that shows the item drop chances.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance (If kill by player)</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Raw Catfish</td>
+                    <td>100%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bone meal</td>
+                    <td>
+                        50% <br>
+                        50%
+                    </td>
+                    <td>
+                        1 <br>
+                        2
+                    </td>
+                </tr>
+            </table>
+            <h4 class="sub-section" id="raw-catfish-item">Raw Catfish</h4>
+            <img src="../../images/items/raw_catfish.png" alt="Raw Catfish Item" class="item-img">
+            <p>
+                Raw catfish is an item that is exclusively dropped by the catfish mob, stackable up to 64 in one item slot. It has a 100% chance 
+                to be dropped by the catfish if the player kills it. Below are the food stats of the raw catfish:
+            </p>
+            <ul>
+                <li>Nutrition: 2</li>
+                <li>Saturation: 0.4</li>
+            </ul>
+            <h5 class="suber-section">Cooking</h5>
+            <p>
+                The raw catfish can only be cooked using the <a href="../blocks/deep_blue_grill.html" class="article-link">Deep Blue
+                Grill</a>. Like every other mob food item in Blue Depths, you can only cook the catfish as 1, 8, 16, or 64 using either
+                sticks (only if you want to cook one), coal, or charcoal as fuel. Below are images showing how to cook the various counts 
+                of catfish:
+            </p>
+            <img src="../../images/recipes/catfish/1_catfish.png" alt="1 Cooked Catfish Recipe" class="item-img" class="recipes">
+            <img src="../../images/recipes/catfish/8_catfish.png" alt="3 Cooked Catfish Recipe" class="item-img" class="recipes">
+            <img src="../../images/recipes/catfish/16_catfish.png" alt="16 Cooked Catfish Recipe" class="item-img" class="recipes">
+            <img src="../../images/recipes/catfish/64_catfish.png" alt="64 Cooked Catfish Recipe" class="item-img" class="recipes">
+            <h4 class="sub-section" id="cook-catfish-item">Cooked Catfish</h4>
+            <img src="../../images/items/cooked_catfish.png" alt="Cooked Catfish Item" class="item-img">
+            <p>
+                Cooked Catfish can be obtained when a player cooks raw catfish in the <a href="../blocks/deep_blue_grill.html" 
+                class="article-link">Deep Blue Grill</a>. It is used as new source of food for the player, stackable up to 64 in one item
+                slot. Below are the food stats of the cooked catfish:
+            </p>
+            <ul>
+                <li>Nutrition: 6</li>
+                <li>Saturation: 8</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+            <p>
+                Catfish are passive mobs, meaning they do not attack the player. They are bottom dwellers, meaning that they tend to stay
+                at the bottom of the river or mangrove swamps. However, at night time, they become much more active. Because of their size
+                they can actually be kept as pets and transported via water buckets. The player only needs to use a bucket of water near
+                the catfish to scoop it up, replacing their water bucket with a bucket of catfish. Like with vanilla Minecraft mobs, right
+                clicking the ground with the bucket of catfish will place water and the catfish, giving the player an empty bucket. When a
+                catfish is placed down via the bucket, they won't despawn, unlike wild catfish who will despawn when the player leaves the
+                area.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.0</th>
+                    <td>
+                        <ul>
+                            <li>Added the catfish</li>
+                            <li>Spawns exclusively in rivers and mangrove swamps</li>
+                            <li>Items
+                                <ul>
+                                    <li>Bucket of Catfish</li>
+                                    <li>Raw Catfish</li>
+                                    <li>Cooked Catfish</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.1</td>
+                    <td>Buffed spawn rate by 33.3%.</td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.2</td>
+                    <td>Fixed a bug where the catfish will sometimes jump out of the water and move around on land.</td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.1.0</td>
+                    <td>
+                        <ul>
+                            <li>Spawn rate decreased by 33.3%
+                            <ul><li>Back to it's original spawn rate from 1.0.0</li></ul></li>
+                            <li>Cooked catfish saturation buffed
+                                <ul><li>Saturation: 6 &rarr; 8</li></ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="https://cdn.modrinth.com/data/h1VZfZYb/images/c0da0317a61442dede5474fc338f4a98801f8105.png" alt="Catfish and Sturgeon" draggable="false" class="gallery-img">
+                    <figcaption>Catfish and Sturgeon showcase</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/catfish.png" alt="Catfish" draggable="false" class="gallery-img">
+                    <figcaption>Catfish on the riverbed</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/raw_catfish.png" alt="Raw Catfish Item" draggable="false" class="gallery-img">
+                    <figcaption>Raw catfish that the catfish drops upon being killed</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/cooked_catfish.png" alt="Cooked Catfish Item" draggable="false" class="gallery-img">
+                    <figcaption>Cooked catfish that can be obtained by cooking raw catfish in the Deep Blue Grill</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/catfish_bucket.png" alt="Catfish Bucket Item" draggable="false" class="gallery-img">
+                    <figcaption>Bucket of Catfish the player can obtain by scooping a catfish up with a bucket of water</figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
