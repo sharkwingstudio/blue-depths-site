@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Box Jellyfish</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header id="header">
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Box Jellyfish</h2>
+        <aside class="info-box">
+            <h3>Box Jellyfish</h3>
+            <img src="../../images/mobs/box_jelly/boxjelly_brown.png" alt="Blue Depths Box Jellyfish Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                    <p><b>Health: </b></p>
+                    <ul>
+                        <li><b>Mature: </b>10 HP (5 hearts)</li>
+                        <li><b>Juvenile: </b>5 HP (2.5 hearts)</li>
+                        <li><b>Polyp: </b>3 HP (1.5 hearts)</li>
+                    </ul>
+                    <p><b>Speed: </b>Slow</p>
+                    <p><b>Hit Box Size: </b></p>
+                    <ul>
+                        <li><b>Mature and Juvenile: </b>0.45 x 0.75 blocks (approximately)</li>
+                        <li><b>Polyp: </b>0.3 x 0.5 blocks (approximately)</li>
+                    </ul>
+                    <p><b>Rarity: </b>Common</p>
+                <h4>Basic Info</h4>
+                    <p><b>Classification: </b>Cnidarian</p>
+                    <p><b>Temperament: </b>Impartial</p>
+                    <p><b>Behavior: </b>Slow swimmers, Hazardous</p>
+                    <p><b>Water Type: </b>Saltwater</p>
+                <h4>Spawns In</h4>
+                    <ul>
+                        <li class="bd-link"><a href="../biomes/ocean.html">Oceans</a></li>
+                        <li class="bd-link"><a href="../biomes/cold_ocean.html">Cold Oceans</a></li>
+                        <li class="bd-link"><a href="../biomes/lukewarm_ocean.html">Lukewarm Oceans</a></li>
+                    </ul>
+                <h4>Usable Items (dropped items)</h4>
+                    <p><b>Juvenile:</b></p>
+                        <ul>
+                            <li>Beetroot</li>
+                        </ul>
+                    <p><b>Polyp:</b></p>
+                        <ul>
+                            <li>Beetroot</li>
+                        </ul>
+            </div>
+        </aside>
+
+        <p>
+            Box Jellyfish are passive saltwater creatures that have a total of 6 distinct variants. Although they are passive, they do
+            pose a danger in the fact that, if a player gets too close, the jellyfish can deliver a nasty sting causing negative
+            effects and damage to the player. Players can raise a grow box jellyfish through the use of the box jellyfish polyp.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Box Jellyfish spawn in all nearly oceans, except for warm oceans and frozen oceans. The way box jellies spawn naturally 
+                is by replacing some naturally spawning aquatic mob. In the case for all the oceans it spawns in, each cod has a chance 
+                to be replaced by a box jellyfish. When a box jellyfish spawns, it can spawn as one of 6 color variants, most of which
+                have an equal chance to spawn, except for the pink variant, which is extremely rare. Below shows a table of the spawn
+                rates for the box jellyfish.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Ocean/Deep Ocean</td>
+                    <td>8% (Cod)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cold Ocean/Deep Cold Ocean</td>
+                    <td>8% (Cod)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Lukewarm Ocean / Deep Lukewarm Ocean</td>
+                    <td>8% (Cod)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <p>Below shows a table on the spawn rates for the color variants when a box jellyfish spawns in:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Variant</th>
+                    <th>Chance to spawn</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Blue</td>
+                    <td>17.86%</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Brown</td>
+                    <td>17.86%</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Yellow</td>
+                    <td>17.86%</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Ghost</td>
+                    <td>17.86%</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">White</td>
+                    <td>17.86%</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Pink</td>
+                    <td>1.79%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                Box Jellyfish have 2 possible items they can drop upon death. One item they can drop is called the nematocyst gel, and
+                the other is a box jellyfish polyp. The color of the polyp entirely depends on the color variant of the box jellyfish
+                that is killed (for example, blue box jellyfish only drop blue box jellyfish polyps). When a box jellyfish dies, it can
+                drop 0 - 2 items in total, each item can be defined by something called a "roll", so there are a minimum of 0 roll, and 
+                a maximum roll of 2. Below shows a table of the item drop chances:
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance</th>
+                    <th>Count (per roll)</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Nematocyst gel</td>
+                    <td>
+                        <ul>
+                            <li>71.43% (non-pink variant)</li>
+                            <li>28.57% (pink variant)</li>
+                        </ul>
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Box Jelly Polyp</td>
+                    <td>
+                        <ul>
+                            <li>28.57% (non-pink variant)</li>
+                            <li>71.43% (pink variant)</li>
+                        </ul>
+                    </td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <h4 class="sub-section" id="nematocyst-gel-item">Nematocyst Gel</h4>
+            <img src="../../images/items/box_jelly/nematocyst_gel.png" alt="Nematocyst Gel Item" class="item-img">
+            <p>
+                The nematocyst gel is an item exclusively dropped by box jellyfish, and is used as an easier way to obtain slimeballs
+                without having to go to biomes like the swamp or mangrove swamp, or by needing to go deep underground. The box jellyfish
+                has a good chance to drop the gel upon death, although it is less likely with the pink variant.
+            </p>
+
+            <h5 class="suber-section">Processing</h5>
+            <p>
+                The nematocyst gel can only be processed into slimeballs using the <a href="../blocks/deep_blue_grill.html" 
+                class="article-link">Deep Blue Grill</a>. Unlike most other cooking or processing done with the Deep Blue Grill, the
+                only fuel source you can use to get slimeballs is by using two sticks. On top of that, you need two nematocyst gels in
+                order to make one slimeball.
+            </p>
+            <img src="../../images/recipes/box_jelly/nematocyst_gel.png" alt="Slimeball Recipe" class="item-img" class="recipes">
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+            <p>
+                Box Jellyfish are slow swimming creatures that can spawn in various colors. As stated in the spawning section, all
+                variants have an equal chance to spawn, however the pink variant has an extremely low chance to spawn in. Due to this
+                the chance for the pink variant to drop a polyp is much higher, so that if the player does encounter one, they are
+                very likely to collect its polyp so the player can keep them as a pet.
+            </p>
+            <p>
+                Box Jellyfish are impartial to the player. They will not go out of their way to attack the player, but if the player
+                gets too close, they can deliver a nasty sting. Below shows the stats for the sting it delivers. Keep in mind that
+                they only sting players, excluding those in creative or spectator mode:
+            </p>
+
+            <ul>
+                <li><b>Attack Cooldown: </b>1 second</li>
+                <li><b>Targets: </b>Players (Survival or Adventure mode)</li>
+                <li><b>Attack Radius: </b> 3 blocks</li>
+                <li><b>Attack Type: </b>Area of Effect, Sting</li>
+                <li><b>Attack Damage: </b>3 HP (Survival or Adventure mode)</li>
+                <li>
+                    <b>Negative Effects:</b>
+                    <ul>
+                        <li>Slowness III (3 seconds)</li>
+                        <li>Mining Fatigue (6 seconds)</li>
+                        <li>Weakness II (6 seconds)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="article-section">Life Cycles and Raising Box Jellyfish</h3>
+
+            <h4 class="sub-section" id="box-jelly-polyp">Box Jelly Polyp</h4>
+            <h5 class="suber-section" id="box-jelly-polyp-item">Box Jelly Polyp (Item)</h5>
+            <img src="../../images/items/box_jelly/blue_box_jelly_item.png" alt="Box Jelly Polyp Item" class="item-img">
+            <p>
+                In order for the player to be able to raise box jellyfish, they cannot use a water bucket because of their size. 
+                Instead, the player must kill an adult box jellyfish for a chance to get a Box Jelly Polyp item (color may vary). The 
+                player can then use that polyp to spawn a box jelly polyp entity and wait for it to grow. All the player has to do is 
+                simply place the polyp item down on the ground, preferably in some body of water, or else the polyp will die.
+            </p>
+
+            <h5 class="suber-section" id="box-jelly-polyp-entity">Box Jelly Polyp (Entity)</h5>
+            <p>
+                The box jelly polyp is the first phase of a box jellyfish's lifecycle. Like with every other baby/juvenile variants of 
+                the Blue Depths mobs, they do not spawn naturally, they can only exist if a player (or blocks like dispensers or 
+                droppers) places a <a href="#box-jelly-polyp-item" class="article-link">Box Jelly Polyp Item</a>. These polyps have the 
+                potential to grow up and become a <a href="#juvenile-box-jelly" class="article-link">Juvenile Box Jellyfish</a>, the next 
+                phase in the life cycle of a box jellyfish. These polyps will never despawn and cannot be killed unless their growth
+                is stunted. Physically they look like a small colored, semi-transparent plant. The color of the polyp depends on which
+                box jelly polyp is placed.
+            </p>
+            <p>
+                For a box jelly polyp to grow up to become a <a href="#juvenile-box-jelly" class="article-link">Juvenile Box Jellyfish
+                </a>, the player must wait a certain amount of time for the polyp to grow all by itself. The total time it takes for a 
+                polyp to become a juvenile is 6:40 minutes.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the polyp, meaning they want to prevent the polyp from ever growing, all
+                the player has to do is drop coal near the polyp. Once a polyp's growth is stunted, it can become killable. This 
+                effect is irreversible. Unlike with vanilla mobs, Blue Depths mobs will not eat if you "use" an item on them, instead 
+                you must throw/drop the item close to them.
+            </p>
+
+            <p>Below shows a table on how each method effects growth:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Coal</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>Box jelly polyps do not drop anything upon death.</p>
+            
+
+            <h4 class="sub-section" id="juvenile-box-jelly">Juvenile Box Jellyfish</h4>
+
+            <p>
+                Juvenile Box Jellyfish is the second phase in a jellyfish's lifecycle. Like the <a href="#box-jelly-polyp-entity" 
+                class="article-link">Box Jelly Polyp (Entity)</a>, juvenile box jellyfish do not spawn naturally, they can only be 
+                obtained when a polyp grows up. Juvenile box jellyfish looks just like mature jellyfish, except they appear smaller. 
+                These jellyfish have to potential to grow into mature jellyfish by simply waiting or giving it food to accelerate its 
+                growth. Juvenile box jellyfish do not despawn like wild mature jellyfish do.
+            </p>
+
+            <p>
+                For a juvenile box jellyfish to grow up to become an adult, the player must wait a certain amount of time for the 
+                juvenile to grow all by itself. The total time it takes for it to grow is 13:20 minutes.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the juvenile box jellyfish, meaning they want to prevent the juvenile from 
+                ever growing, all the player has to do is drop beetroot near the juvenile. This effect is irreversible. Unlike with 
+                vanilla mobs, Blue Depths mobs will not eat if you "use" an item on them, instead you must throw/drop the item close 
+                to them.
+            </p>
+
+            <p>Below shows a table on how each method affects the growth of the juvenile:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Beetroot</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>Juvenile box jellyfish do not drop anything upon death.</p>
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.0 (Initial Release)</th>
+                    <td>
+                        <ul>
+                            <li>Added box jellyfish</li>
+                            <li>Spawns in most oceans except for warm and frozen variants</li>
+                            <li>Items
+                                <ul>
+                                    <li>Nematocyst gel</li>
+                                    <li>Box Jelly Polyp (and their variants)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.3</th>
+                    <td>
+                        Fixed a bug where players in creative or spectator mode would receive the sting effect when near the 
+                        box jellies.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="https://cdn.modrinth.com/data/h1VZfZYb/images/8f2164dab2f8f6b9e4fb14f53387c7265f044791.png" alt="Box Jellyfish Showcase" draggable="false" class="gallery-img">
+                    <figcaption>Box Jellfish (Blue) showcase from modrinth.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/box_jelly/boxjelly_blue.png" alt="Blue Box Jellfish" draggable="false" class="gallery-img">
+                    <figcaption>Blue Box Jellfish.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/box_jelly/boxjelly_brown.png" alt="Brown Box Jellfish" draggable="false" class="gallery-img">
+                    <figcaption>Brown Box Jellfish.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/box_jelly/boxjelly_yellow.png" alt="Yellow Box Jellfish" draggable="false" class="gallery-img">
+                    <figcaption>Yellow Box Jellfish.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/box_jelly/boxjelly_ghost.png" alt="Ghost Box Jellfish" draggable="false" class="gallery-img">
+                    <figcaption>Ghost Box Jellyfish.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/box_jelly/boxjelly_white.png" alt="White Box Jellfish" draggable="false" class="gallery-img">
+                    <figcaption>White Box Jellyfish.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/box_jelly/boxjelly_pink.png" alt="Pink Box Jellfish" draggable="false" class="gallery-img">
+                    <figcaption>Pink Box Jellyfish (Legendary Rarity).</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/box_jelly/nematocyst_gel.png" alt="Nematocyst Gel Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Nematocyst gel can be dropped by Box Jellyfish upon death.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/box_jelly/blue_box_jelly_item.png" alt="Blue Box Jelly Polyp Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Blue Box Jelly Polyp can only be dropped by Blue Box Jellyfish upon death.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/box_jelly/brown_box_jelly_item.png" alt="Brown Box Jelly Polyp Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Brown Box Jelly Polyp can only be dropped by Brown Box Jellyfish upon death.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/box_jelly/yellow_box_jelly_item.png" alt="Yellow Box Jelly Polyp Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Yellow Box Jelly Polyp can only be dropped by Yellow Box Jellyfish upon death.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/box_jelly/white_box_jelly_item.png" alt="White Box Jelly Polyp Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        White Box Jelly Polyp can only be dropped by White Box Jellyfish upon death.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/box_jelly/ghost_box_jelly_item.png" alt="Ghost Box Jelly Polyp Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Ghost Box Jelly Polyp can only be dropped by Blue Box Jellyfish upon death.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/box_jelly/pink_box_jelly_item.png" alt="Pink Box Jelly Polyp Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Pink Box Jelly Polyp can only be dropped by Pink Box Jellyfish upon death.
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

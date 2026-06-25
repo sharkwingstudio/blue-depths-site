@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Sturgeon</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header id="header">
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Sturgeon</h2>
+        <aside class="info-box">
+            <h3>Sturgeon</h3>
+            <img src="../../images/mobs/sturgeon.png" alt="Blue Depths Sturgeon Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                    <p><b>Health: </b></p>
+                    <ul>
+                        <li><b>Mature: </b>10 HP (5 hearts)</li>
+                        <li><b>Juvenile: </b>8 HP (4 hearts)</li>
+                        <li><b>Eggs: </b>1 HP (0.5 hearts)</li>
+                    </ul>
+                    <p><b>Speed: </b>Medium</p>
+                    <p><b>Hit Box Size: </b></p>
+                    <ul>
+                        <li><b>Mature: </b>0.64 x 1.12 blocks (approximately)</li>
+                        <li><b>Juvenile: </b>0.3 x 0.5 blocks (approximately)</li>
+                        <li><b>Eggs: </b>0.4 x 0.5 blocks (approximately)</li>
+                    </ul>
+                    <p><b>Rarity: </b>Epic</p>
+                    <p><b>Damage Reduction: </b>60% (Mature and Juvenile)</p>
+                <h4>Basic Info</h4>
+                    <p><b>Classification: </b>Fish</p>
+                    <p><b>Temperament: </b>Passive</p>
+                    <p><b>Behavior: </b>Tough, Midwater fish</p>
+                    <p><b>Water Type: </b>Freshwater</p>
+                <h4>Spawns In</h4>
+                    <ul>
+                        <li class="bd-link"><a href="../biomes/rivers.html">Rivers</a></li>
+                    </ul>
+                <h4>Usable Items (dropped items)</h4>
+                    <p><b>Juvenile:</b></p>
+                        <ul>
+                            <li>Cod</li>
+                            <li>Spider eye</li>
+                            <li>Beetroot</li>
+                        </ul>
+                    <p><b>Eggs:</b></p>
+                        <ul>
+                            <li>Coal</li>
+                        </ul>
+            </div>
+        </aside>
+
+        <p>
+            Sturgeon are a river exclusive fish that spawns very rarely (epic rarity). It is an extremely tough fish, being able to
+            reduce damage taken by 60%. It also can drop it's scute, which can be processed to make the Armorbite, an item that gives
+            the player resistance for a certain amount of time when consumed.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Sturgeon have and "epic" rarity, meaning that you should not expect to see it very often. The way sturgeons spawn 
+                naturally is by replacing some naturally spawning aquatic mob. In rivers, each salmon has a very small percent chance
+                to be replaced with a sturgeon. The table below shows the spawn rates of the sturgeon in the biomes they spawn in.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">River</td>
+                    <td>4% (Salmon)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                Sturgeon have 3 possible items it can drop upon death. Two items can only be dropped if a player kills the sturgeon,
+                that being sturgeon eggs and the sturgeon scute. The other item it can drop is bone meal. When the sturgeon dies, it can
+                drop 1 - 3 items in total, each item can be defined by something called a "roll", so there are a minimum of 1 roll, and 
+                a maximum roll of 3. Below shows a table of the item drop chances:
+            </p>
+            <table class="chance-table">
+                <caption>
+                    (Chances are calculated per roll. When a sturgeon is not killed by a player, only bonemeal remains eligible and 
+                    therefore has a 100% chance to be selected.)
+                </caption>
+                <tr>
+                    <th>Item</th>
+                    <th>Chance (if killed by player)</th>
+                    <th>Chance (if not killed by player)</th>
+                    <th>Count (per roll)</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Sturgeon Scute</td>
+                    <td>13.63%</td>
+                    <td>0%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Sturgeon Eggs (Item)</td>
+                    <td>13.63%</td>
+                    <td>0%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bonemeal</td>
+                    <td>72.73%</td>
+                    <td>100%</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <h4 class="sub-section" id="sturgeon-scute-item">Sturgeon Scute</h4>
+            <img src="../../images/items/sturgeon_scute.png" alt="Sturgeon Scute Item" class="item-img">
+            <p>
+                Sturgeon scute is exclusively dropped by sturgeons when killed by a player. The scute is a very rare useful item because
+                the scute can be processed to make the <a href="#armorbite-item" class="article-link">Armorbite</a> using the 
+                <a href="../blocks/deep_blue_grill.html" class="article-link">Deep Blue Grill</a>. However, by itself it doesn't serve 
+                any other purpose.
+            </p>
+
+            <h4 class="sub-section" id="armorbite-item">Armorbite</h4>
+            <img src="../../images/items/armorbite.png" alt="Armorbite Item" class="item-img">
+            <p>
+                The Armorbite can be obtained when a player cooks <a href="#sturgeon-scute-item" class="article-link">Sturgeon Scute
+                </a> using the <a href="../blocks/deep_blue_grill.html" class="article-link">Deep Blue Grill</a>. However, the only
+                fuel source that can be used is a blaze rod. Once you cook the sturgeon scute, the blaze rod will still be preserved.
+            </p>
+
+            <img src="../../images/recipes/sturgeon/armor_bite.png" alt="Armorbite Recipe" class="item-img" class="recipes">
+
+            <p>
+                Upon obtaining the Armorbite, the player can eat it to receive the Resistance I effect for 3 minutes. That is all the
+                player will receive, the Armorbite does not give any nutrition or saturation effects. The Armorbite is stackable up to
+                64 in one slot.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+            
+            <p>
+                Sturgeon are passive mobs, meaning they do not attack the player. They are ambient fish that swim around midwater
+                in the various rivers. They are extremely tough, being able to reduce the amount of damage they receive from most
+                sources of damage by 60%. Because of their size they can't be transported via water buckets. Instead, the player must 
+                kill a sturgeon and hope it drops sturgeon eggs and use that item to raise sturgeon into adulthood. More information 
+                about doing this is found in the next section.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Life Cycles and Raising Sturgeon</h3>
+
+            <h4 class="sub-section" id="sturgeon-eggs">Sturgeon Eggs</h4>
+            <h5 class="suber-section" id="sturgeon-eggs-item">Sturgeon Eggs (Item)</h5>
+            <img src="../../images/items/sturgeon_eggs_item.png" alt="Sturgeon Eggs Item" class="item-img">
+            <p>
+                In order for the player to be able to raise sturgeon, they cannot use a water bucket due to their size. Instead, the 
+                player must kill an adult sturgeon for a chance to get an item called Sturgeon Eggs. The player can place these eggs 
+                and wait for them to grow,preferably in some body of water, or else the eggs will die immediately.
+            </p>
+
+            <h5 class="suber-section" id="sturgeon-eggs-entity">Sturgeon Eggs (Entity)</h5>
+            <p>
+                Sturgeon eggs are the first phase of a sturgeon's lifecycle. Like with every other baby/juvenile variants of the Blue 
+                Depths mobs, they do not spawn naturally, they can only exist if a player (or blocks like dispensers or droppers) places a
+                <a href="#sturgeon-eggs-item" class="article-link">Sturgeon Eggs Item</a>. These eggs have the potential to grow up and 
+                become a <a href="#juvenile-sturgeon" class="article-link">Juvenile Sturgeon</a>, the next phase in the life cycle of a
+                sturgeon. They look like a bunch of little dark cubes huddled together. They will never despawn unless they are either
+                killed by the player or are removed from a source of water.
+            </p>
+            <p>
+                Unlike most other life-cycle mobs/entities from Blue Depths, Sturgeon Eggs can only grow into <a 
+                href="#juvenile-sturgeon" class="article-link">Juvenile Sturgeon</a> through the passage of time. There are no items
+                that can be thrown at the eggs to speed up their growth process. The eggs will take 1:40 minutes to grow into a
+                juvenile sturgeon. However, there is a 20% chance that the eggs could spawn two juvenile sturgeons.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the eggs, meaning they want to prevent the eggs from ever hatching, all
+                the player has to do is drop coal near the eggs. This effect is irreversible.
+            </p>
+
+            <p>Below shows a table on how each method accelerates the growth of the Sturgeon Eggs:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Coal</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>Sturgeon Eggs do not drop anything upon death.</p>
+            
+
+            <h4 class="sub-section" id="juvenile-sturgeon">Juvenile Sturgeon</h4>
+
+            <p>
+                Juvenile sturgeon is the second phase in a tuna's lifecycle. Like the <a href="#sturgeon-eggs-entity" 
+                class="article-link">Sturgeon Eggs</a>, juvenile sturgeon do not spawn naturally, they can only be obtained when a 
+                sturgeon eggs hatch/grow up. Juvenile sturgeon looks just like adult sturgeon, except they appear smaller. These fish 
+                have to potential to grow into mature sturgeon by simply waiting or giving it food to accelerate its growth. Juvenile 
+                sturgeon do not despawn like wild adult sturgeon do.
+            </p>
+
+            <p>
+                For a juvenile sturgeon to grow up to become an adult, the player has two options. The player can either wait a certain 
+                amount of time for the juvenile to grow all by itself, or they can feed it cod or spider eyes to speed up the growth 
+                process, by taking a certain amount of time out of the remaining time left to grow. Unlike with vanilla mobs, Blue 
+                Depth mobs will not eat if you "use" an item on them, instead you must throw/drop the item close to them. The total 
+                time it takes for it to grow is 40 minutes of real time, a long wait time that is supposed to mimick how real life
+                sturgeon take a really long time to mature. Due to this long wait, it is recommended to just feed the sturgeon food to
+                accelerate its growth.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the juvenile sturgeon, meaning they want to prevent the juvenile from ever 
+                growing, all the player has to do is drop beetroot near the juvenile. This effect is irreversible.
+            </p>
+
+            <p>Below shows a table on how each method accelerates the growth of the juvenile:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cod (Item)</td>
+                    <td>Removes 50 seconds from remaining time</td>
+                    <td>48 cod</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Spider Eye (Item)</td>
+                    <td>Removes 120 seconds from remaining time</td>
+                    <td>20 Spider eyes</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Beetroot</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>Juvenile Sturgeon do not drop anything upon death.</p>
+
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.0 (Initial Release)</th>
+                    <td>
+                        <ul>
+                            <li>Added the sturgeon</li>
+                            <li>Spawns only in rivers</li>
+                            <li>Items
+                                <ul>
+                                    <li>Sturgeon Scute</li>
+                                    <li>Sturgeon Eggs</li>
+                                    <li>Armorbite</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.1.0 (Roaring Rivers Part 1: Below the Surface)</th>
+                    <td>
+                        Fixed a bug where sturgeon would sometimes swim in directions it wasn't facing.
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/sturgeon.png" alt="Sturgeon Swimming" draggable="false" class="gallery-img">
+                    <figcaption>Sturgeon swimming along the riverbed with a wandering largemouth bass nearby.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="https://cdn.modrinth.com/data/h1VZfZYb/images/c0da0317a61442dede5474fc338f4a98801f8105.png" alt="Catfish and Sturgeon" draggable="false" class="gallery-img">
+                    <figcaption>Catfish and Sturgeon showcase</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/sturgeon_eggs_item.png" alt="Sturgeon Eggs Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Sturgeon eggs can be obtained upon killing a mature sturgeon to raise your own sturgeon through its lifecycle.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/sturgeon_scute.png" alt="Sturgeon Scute Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Sturgeon scute can be obtained by killing a mature sturgeon. It can be processed to make the Armorbite using
+                        the Deep Blue Grill.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/armorbite.png" alt="Armorbite Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        The Armorbite is a powerful item that the player can eat to gain Resistance I for 3 minutes.
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

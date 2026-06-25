@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Archerfish</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header>
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Archerfish</h2>
+        <aside class="info-box">
+            <h3>Archerfish</h3>
+            <img src="../../images/mobs/archerfish.png" alt="Blue Depths Archerfish Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                    <p><b>Health: </b>3 HP (1.5 hearts)</p>
+                    <p><b>Attack Strength:</b></p>
+                        <ul>
+                            <li>0.5 (0.25 hearts) (player)</li>
+                            <li>10 (5 hearts) (other mobs)</li>
+                            <li>0 (0 hearts) (archerfish)</li>
+                        </ul>
+                    <p><b>Speed: </b>Medium</p>
+                    <p><b>Hit Box Size: </b> 0.3 x 0.5 blocks (approximately)</p>
+                    <p><b>Rarity: </b>Rare</p>
+                <h4>Basic Info</h4>
+                    <p><b>Classification: </b>Fish</p>
+                    <p><b>Temperament: </b>Impartial</p>
+                    <p><b>Behavior: </b>Predator, Provoker</p>
+                    <p><b>Water Type: </b>Fresh water</p>
+                <h4>Spawns In</h4>
+                <ul>
+                    <li class="bd-link"><a href="../biomes/rivers.html">Rivers</a></li>
+                </ul>
+                <h4>Usable Items</h4>
+                <p>Water Bucket</p>
+            </div>
+        </aside>
+
+        <p>
+            Archerfish are predatory river fish that possess the unique ability to "spit" water at both players and insect mobs.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Archerfish are rare solitary fish that spawn exclusively in rivers. The way archerfish spawn naturally is by
+                replacing some naturally spawning aquatic mob. In rivers, each salmon has a chance to be replaced with an archerfish. 
+                The table below shows the spawn rates of the archerfish in the biome it spawns in.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Rivers</td>
+                    <td>4.1% (Salmon)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                Archerfish can drop 1 - 2 items upon death. The items it can drop are bonemeal and the
+                archerfish item (if killed by a player). Below is a table that shows the chances for it to drop items:
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bonemeal</td>
+                    <td>66.67%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Archerfish Item</td>
+                    <td>33.33% (if killed by player)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <h4 class="sub-section" id="archerfish-item">Archerfish (Item)</h4>
+            <img src="../../images/items/archerfish_item.png" alt="Archerfish Item" class="item-img">
+            <p>
+                The archerfish (item) is collectible/trophy item. Players can put it in item frames or keep it in storage. It can also
+                be used as a source of food for the player. Below are the food statistics of the archerfish item:
+            </p>
+
+            <ul>
+                <li>Nutrition: 2</li>
+                <li>Saturation: 0.4</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+            <p>
+                Archerfish are midwater swimmers that swim anywhere in their habitat. They have no restrictions like some other
+                freshwater fish like the catfish, who like to stay at the bottom of the riverbed. Their swim speed is about the same
+                as most other fish mobs like the largemouth bass, salmon, cod, etc.
+            </p>
+
+            <h4 class="sub-section">Spit Attack</h4>
+            <p>
+                Archerfish possess a very unique ability that is not found in any other Blue Depths mob (at least currently), the
+                ability to spit water. This behavior mimics the real life ability of the archerfish, who typically use this spit
+                attack to target insects near the waters surface to shoot them down so the archerfish can have a insect snack.
+            </p>
+
+            <p>
+                This spit attack makes them predatory fish, not just for insect mobs, but also to the player as well (something the
+                real life archerfish does not do). However, their predatory behavior is a bit different from the other mobs, because
+                of the fact that they will not go out of the way to target, chase, or attack players/mobs. They will simply attack any
+                nearby entity that they see as a target. The entities they see as targets are listed below:
+            </p>
+
+            <ul>
+                <li>Players out of water (Survival or Adventure mode)</li>
+                <li>Bees</li>
+                <li>Spiders</li>
+                <li>Cave Spiders</li>
+                <li>Silverfish</li>
+                <li>Endermite</li>
+            </ul>
+
+            <p>
+                The way the spit attack affects other mobs is dependent on the mob. The damage received from the spit attack is
+                different for players and every other mob in the game. The spit attack can also deal damage to every other mob that is
+                not a target, such as those who get hit with a stray spit.
+            </p>
+
+            <h5 class="suber-section">Spit Attack Stats:</h5>
+
+            <ul>
+                <li><b>Attack Cooldown: </b>6 seconds</li>
+                <li><b>Attack radius: </b> 10 blocks</li>
+                <li><b>Attack Type: </b>Projectile</li>
+                <li><b>Stops at: </b>
+                    <ul>
+                        <li>Mobs (players included)</li>
+                        <li>Solid Blocks</li>
+                    </ul>
+                </li>
+                <li><b>Attack damage:</b>
+                    <ul>
+                        <li>Players (Survival or Adventure mode): 0.5 HP (0.25 hearts)</li>
+                        <li>Archerfish: 0 HP (0 hearts)</li>
+                        <li>Other mobs: 10 HP (5 hearts)</li>
+                    </ul>
+                </li>
+                <li><b>Projectile top distance: </b> 12.5 blocks</li>
+                <li><b>Projectile speed: </b>5 blocks per second</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="article-section">Obtaining Archerfish</h3>
+            <h4 class="sub-section" id="archerfish-bucket">Bucket of Archerfish</h4>
+            <img src="../../images/items/archerfish_bucket.png" alt="Archerfish Bucket Item" class="item-img">
+            <p>
+                Because of their size archerfish can actually be kept as pets and transported via water buckets. The player only 
+                needs to use a bucket of water near the archerfish to scoop it up, replacing their water bucket with a bucket of archerfish
+                archerfish. Like with vanilla Minecraft mobs, right clicking the ground with the bucket of archerfish will place water 
+                and the archerfish, giving the player an empty bucket. When am archerfish is placed down via the bucket, it won't despawn, unlike 
+                wild, naturally spawning archerfish who will despawn when the player leaves the area.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.1.0 (Roaring Rivers Part 1: Below the Surface)</th>
+                    <td>
+                        <ul>
+                            <li>Added the archerfish</li>
+                            <li>Spawns exclusively in rivers</li>
+                            <li>Items
+                                <ul>
+                                    <li>Bucket of Archerfish</li>
+                                    <li>Archerfish (Item)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/archerfish.png" alt="Archerfish" draggable="false" class="gallery-img">
+                    <figcaption>Archerfish swimming in a river.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/archerfish_item.png" alt="Archerfish Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Archerfish item that the archerfish (mob) can drop upon death.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/archerfish_bucket.png" alt="Bucket of Archerfish" draggable="false" class="gallery-img">
+                    <figcaption>
+                        A bucket of archerfish that can be obtained when a player uses a water bucket on an archerfish.
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

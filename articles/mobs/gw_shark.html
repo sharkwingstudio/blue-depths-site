@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Great White Shark</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header id="header">
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Great White Shark</h2>
+        <aside class="info-box">
+            <h3>Great White Shark</h3>
+            <img src="../../images/mobs/gw_shark.png" alt="Blue Depths Great White Shark Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                    <p><b>Health: </b></p>
+                        <ul>
+                            <li><b>Mature: </b>60 HP (30 hearts)</li>
+                            <li><b>Pup: </b>20 HP (10 hearts)</li>
+                        </ul>
+                    <p><b>Attack Strength:</b></p>
+                        <ul>
+                            <li><b>Stalker: </b>5.5 HP (2.75 hearts)</li>
+                            <li><b>Aggressive: </b>10 HP (5 hearts)</li>
+                        </ul>
+                    <p><b>Speed:</b></p>
+                        <ul>
+                            <li><b>Mature:</b>
+                                <ul>
+                                    <li><b>Passive: </b>Slow</li>
+                                    <li><b>Stalker: </b>Slow</li>
+                                    <li><b>Aggressive: </b>Very fast</li>
+                                </ul>
+                            </li>
+                            <li><b>Pup: </b>Above Average</li>
+                        </ul>
+                    <p><b>Hit Box Size: </b></p>
+                        <ul>
+                            <li><b>Mature:</b>
+                                <ul>
+                                    <li><b>Passive: </b>1.8 x 3.15 (approximately)</li>
+                                    <li><b>Stalker: </b>1.9 x 0.6 (approximately)</li>
+                                    <li><b>Aggressive: </b>1.9 x 0.6 (approximately)</li>
+                                </ul>
+                            </li>
+                            <li><b>Pup: </b>0.6 x 1.05 (approximately)</li>
+                        </ul>
+                    <p><b>Rarity: </b>Uncommon</p>
+                <h4>Basic Info</h4>
+                <p><b>Classification: </b>Fish (Shark)</p>
+                <p><b>Temperament: </b>Unpredictable</p>
+                <p><b>Behavior: </b>Predator, aggressor, dangerous</p>
+                <p><b>Water Type: </b>Saltwater</p>
+                <h4>Spawns In</h4>
+                <ul>
+                    <li class="bd-link"><a href="../biomes/ocean.html">Oceans</a></li>
+                    <li class="bd-link"><a href="../biomes/cold_ocean.html">Cold Oceans</a></li>
+                    <li class="bd-link"><a href="../biomes/lukewarm_ocean.html">Lukewarm Oceans</a></li>
+                </ul>
+                <h4>Usable Items (dropped items)</h4>
+                <p><b>Pup:</b></p>
+                        <ul>
+                            <li>Cod</li>
+                            <li>Salmon</li>
+                            <li>Tuna Fillet</li>
+                        </ul>
+            </div>
+        </aside>
+
+        <p>
+            Great white sharks are predatory creatures that reside in most oceans. When encountering one, it can be unpredicatable if
+            it will be completely passive towards the player or if it will start attacking. If attacked while it is passive or stalker
+            variant, it be become aggressive toward the player and start hunting them down. They can be raised by the player from pup
+            to adult.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Great white sharks are uncommon mobs that spawn in all nearly oceans, except for warm oceans and frozen oceans. The 
+                way great whites spawn naturally is by replacing some naturally spawning aquatic mob. In the case for all the oceans it
+                spawns in each cod has a chance to be replaced with a great white shark. The table below shows the spawn rates for the 
+                great white shark in the biomes it spawn in.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Ocean/Deep Ocean</td>
+                    <td>4.1% (Cod)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cold Ocean/Deep Cold Ocean</td>
+                    <td>4.1% (Cod)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Lukewarm Ocean / Deep Lukewarm Ocean</td>
+                    <td>4.1% (Cod)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                Great white sharks have 4 possible items it can drop upon death. It can drop a Great White Shark Pup, Great White
+                Shark Tooth, cod, and salmon. When the shark dies, it can drop 2 - 3 item "pools" in total, each item can be 
+                defined by something called a "roll", so there are a minimum of 2 rolls, and a maximum roll of 3. Below shows a table 
+                of the item drop chances:
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Great White Shark Tooth</td>
+                    <td>21.98%</td>
+                    <td>0 - 1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Great White Shark Pup</td>
+                    <td>14.84%</td>
+                    <td>1 - 2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Salmon</td>
+                    <td>27.48%</td>
+                    <td>0 - 3</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cod</td>
+                    <td>35.71%</td>
+                    <td>0 - 3</td>
+                </tr>
+            </table>
+
+            <h4 class="sub-section" id="gw-shark-tooth-item">Great White Shark Tooth</h4>
+            <img src="../../images/items/gw_shark_tooth_img.png" alt="Great White Shark Tooth Item" class="item-img">
+            <p>
+                The Great White Shark tooth is collectible item dropped by both orcas and great white sharks. Players can put it in 
+                item frames or keep it in storage. It can also be used in summoning the <a href="../bosses/nameless_depth.html" 
+                class="article-link">Nameless Depth</a> boss using The Nameless Catalyst.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior and Identification</h3>
+
+            <h4 class="sub-section">Identifying the Great White</h4>
+            <p>
+                Great white sharks are the biggest aggressive shark in Blue Depths. They are much bigger than bull sharks, and
+                have other features that distiguish it from the bull shark. For one, they are slimmer and have a more cool grey
+                coloration compared to the bull shark, and they have a noticeable overbite that is not present in bull sharks. One
+                other noticeable difference is the biomes it spawns in. The Great White is not limited in where it can spawn as much
+                as the bull shark. It can spawn in various oceans of different temperatures like cold, lukewarm, and regular oceans.
+                This is very different from the more biome specific bull shark that can only spawn in lukewarm oceans and rivers. 
+            </p>
+            
+            <h4 class="sub-section">Behavior</h4>
+            <p>
+                Great White Sharks are dangerous underwater predators. Even though they are passive for the most part in the wild,
+                there are some variants that will actually pursue the player and attack them but deal less damage and move slower than
+                those who become angry/aggressive, these variants are called the stalker variants. Of the great white sharks that
+                spawn naturally, 15% of them will spawn as a stalker variant. These variants do not have any physical differences from
+                regular passive sharks, they look exactly the same. Player raised great white sharks will never become a stalker
+                variant.
+            </p>
+
+            <p>
+                When a wild mature great white shark receives damage (passive, player-raised, or stalker) they will become angry and
+                become the aggressive toward the player. If a player is within 6 blocks of a great white shark receiving damage, they
+                will be able to hear the growl of the shark, indicating the shark has become aggressive. When the shark becomes
+                aggressive, it will start attacking the nearest player, and if the targeted player exits the water, it will switch
+                targets to the next nearest underwater player. When aggressive, not only does the shark's damage increased 
+                significantly, but also it's speed. Once a shark becomes aggressive, it will never change back to it's passive version,
+                the only way to deal with it is to either leave or kill the shark. Like with the stalker variant, the aggressive
+                version of the great white shark is indistinguishable from the passive version. This version is supposed to function
+                as a mini-boss for the oceans.
+            </p>
+
+            <p>
+                When a great white shark is either a stalker or aggressive variant, it's hit box size is different from the passive
+                version. The passive version has it's hitbox taking up almost it's entire body. The stalker and aggressive variant
+                have their hitbox only take up their head, so when in combat with these variants, make sure to aim for the head to
+                deal damage.
+            </p>
+
+        </section>
+
+        <section>
+            <h3 class="article-section">Life Cycles and Raising Great White Sharks</h3>
+
+            <h4 class="sub-section" id="gw-pup-item">Great White Shark Pup (Item)</h4>
+            <img src="../../images/items/great_white_pup.png" alt="Great White Pup Item" class="item-img">
+            <p>
+                In order for the player to be able to raise great white sharks, they cannot use a water bucket due to their size. 
+                Instead, the player must kill an adult great white shark for a chance to get an item called Great White Shark Pup. The 
+                player can place this pup item onto the ground or in a body of water and begin the feeding process to make the great
+                white shark pup to grow. Or they can simply leave it and have a pup as their own personal pet!
+            </p>
+
+            <h4 class="sub-section" id="gw-pup-mob">Great White Shark Pup (Mob)</h4>
+
+            <h5 class="suber-section">Behavior</h5>
+            <p>
+                As of version 1.1.0 and above for Blue Depths, the great white shark pup will never attack players, even if they are attacked.
+                This very different from adult great white sharks and even bull shark pups, who can attack players. Instead great
+                white shark pups swim around like normal fish, albeit slightly faster.
+            </p>
+
+            <p>
+                For versions 1.0.3 and below for Blue Depths, the great white shark pup acts differently than it does for 1.1.0 and
+                above. These versions do actually actively attack players. It doesn't matter what the conditions are, they will attack
+                no matter what, even if it wasn't hit first. These pups deal about the same damage as drowned do and aren't as fast as
+                aggressive adults. This behavior was changed in 1.1.0 in order to be slightly more accurate to how great white pups
+                act in real life, and to contrast the bull shark pup that was introduced in the same update.
+            </p>
+
+            <p>In all versions of Blue Depths, these pups will never despawn.</p>
+
+            <h5 class="suber-section">Raising into an adult</h5>
+
+            <p>
+                The great white shark pup is the first phase of a great white shark's life cycle. These pups do not spawn naturally, 
+                they can only be obtained when a player or block (like dispensers) places a great white pup down. These pups looks 
+                just like adult great white sharks, except they appear much smaller. These fish have to potential to grow into mature 
+                great white sharks by giving it food to accelerate its growth. Unlike most other mobs in Blue Depths, this pup cannot
+                grow up by itself through the passage of time, instead the player must actively be involved in feeding the pup to
+                make it grow. Unlike their adult counterparts, these pups will never attack the player.
+            </p>
+
+            <p>
+                For these pups to grow up to become an adult, the player must feed the pup food. There are three options of food the
+                shark will eat: salmon, cod, and tuna fillet. Unlike with vanilla mobs, Blue Depth mobs will not eat if you "use" an 
+                item on them, instead you must throw/drop the item close to them. Each food source that you give the pup varies in how
+                much it helps making it reach maturity.
+            </p>
+
+            <p>
+                If the player wishes just keep the pup as a pet, all the player has to do is simply never feed it.
+            </p>
+
+            <p>Below shows a table on how each method helps accelerate it's growth to maturity:</p>
+
+            <table class="chance-table">
+                <caption>
+                    Please note that the percentages shown in the table are how much it contributes for the pup to reach 100% 
+                    maturity. For example, feeding two cod (2% maturity) to the pup make's it's maturity level 4%. Feeding one tuna
+                    fillet and one cod makes it's maturity level 9%. In order for the shark to grow, it must reach 100%.
+                </caption>
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cod (Item)</td>
+                    <td>2%</td>
+                    <td>50 cod</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Salmon (Item)</td>
+                    <td>3%</td>
+                    <td>34 salmon</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Tuna Fillet</td>
+                    <td>7%</td>
+                    <td>15 tuna fillets</td>
+                </tr>
+            </table>
+
+            <p>Great white shark pups don't drop anything on death.</p>
+
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.0 (Initial Release)</th>
+                    <td>
+                        <ul>
+                            <li>Added the great white shark</li>
+                            <li>Spawns in oceans, cold oceans, and lukewarm oceans. Also spawns in their deep variants</li>
+                            <li>Items
+                                <ul>
+                                    <li>Great White Shark Tooth</li>
+                                    <li>Great White Shark Pup</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.1</th>
+                    <td>
+                        <ul>
+                            <li>Increase spawn rate by 105%</li>
+                            <li>Fixed bug where shark would surface on land and move around.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.2</th>
+                    <td>
+                        Fixed bug where <b>pups</b> would surface on land and move around.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.1.0 (Roaring Rivers Part 1: Below the Surface)</th>
+                    <td>
+                        <ul>
+                            <li>Great White pups no longer attack the player</li>
+                            <li>Change does not reflect on pre-existing pups from older versions of the datapack.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/gw_shark.png" alt="Great White Shark Swimming" draggable="false" class="gallery-img">
+                    <figcaption>Great White Shark swimming around in ocean with Orcas in the background</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="https://cdn.modrinth.com/data/h1VZfZYb/images/3e25f3a1874860673397c4a766bb3355e68e2382.png" alt="Shark Showcase" draggable="false" class="gallery-img">
+                    <figcaption>Shark showcase featuring great white shark.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/great_white_pup.png" alt="Great White Pup Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Pup can be obtained upon killing a mature great white shark to raise your own shark through its lifecycle.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/gw_shark_tooth_img.png" alt="Great White Shark Tooth Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Shark teeth can be obtained by killing orcas and great white sharks. Collectible item.
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Orca</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header>
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Orca</h2>
+        <aside class="info-box">
+            <h3>Orca</h3>
+            <img src="../../images/mobs/orca.png" alt="Blue Depths Orca Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                    <p><b>Health: </b>90 HP (45 hearts)</p>
+                    <p><b>Attack Strength: </b>15 (7.5 hearts)</p>
+                    <p><b>Speed: </b>Very fast</p>
+                    <p><b>Hit Box Size: </b> 1.26 x 1.89 blocks (approximately)</p>
+                    <p><b>Rarity: </b>Very Rare</p>
+                <h4>Basic Info</h4>
+                <p><b>Classification: </b>Mammal</p>
+                <p><b>Temperament: </b>Neutral</p>
+                <p><b>Behavior: </b>Predator, Defensive</p>
+                <p><b>Water Type: </b>Saltwater</p>
+                <h4>Spawns In</h4>
+                <ul>
+                    <li class="bd-link"><a href="../biomes/ocean.html">Oceans</a></li>
+                    <li class="bd-link"><a href="../biomes/cold_ocean.html">Cold Oceans</a></li>
+                    <li class="bd-link"><a href="../biomes/lukewarm_ocean.html">Lukewarm Oceans</a></li>
+                    <li class="bd-link"><a href="../biomes/frozen_ocean.html">Frozen Oceans</a></li>
+                </ul>
+                <h4>Usable Items</h4>
+                <p>None</p>
+            </div>
+        </aside>
+
+        <p>
+            Orcas are neutral aquatic mammals that spawn in all nearly ocean biomes. Like vanilla dolphins, they can grant players
+            dolphins grace, follow players around, and can lead to treasure.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Orcas are rare mobs that spawn in pairs in all nearly oceans, except for warm oceans. The way orcas spawn naturally is 
+                by replacing some naturally spawning aquatic mob. In the case for all oceans (except frozen oceans) each cod has a 
+                chance to be replaced with an orca pair. However, in frozen and deep frozen oceans, each salmon has a chance to be 
+                replaced with an orca. The table below shows the spawn rates of the orcas in the biomes they spawn in.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Ocean/Deep Ocean</td>
+                    <td>1% (Cod)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cold Ocean/Deep Cold Ocean</td>
+                    <td>1% (Cod)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Lukewarm Ocean / Deep Lukewarm Ocean</td>
+                    <td>1% (Cod)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Frozen Ocean / Deep Frozen Ocean</td>
+                    <td>1% (Salmon)</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                From the orca's loot table, it has to potential to drop 3 - 4 items, but it can be less if the one of the items 
+                selected from the pool can drop 0 times. It has the largest pool of items it can drop out of any mob added by Blue
+                Depths. It can drop orca teeth, great white shark teeth, bones, tuna fillets, salmon, and cod. Unlike some other
+                mobs in Blue Depths, all of these items can be dropped regardless if the player kills the orca or not. Below is a
+                table that shows the item drop chances.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Orca Tooth</td>
+                    <td>16.67%</td>
+                    <td>1 - 3</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Great White Shark Tooth</td>
+                    <td>16.67%</td>
+                    <td>0 - 2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bone</td>
+                    <td>16.67%</td>
+                    <td>0 - 2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Tuna Fillet</td>
+                    <td>16.67%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Salmon</td>
+                    <td>16.67%</td>
+                    <td>1 - 4</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cod</td>
+                    <td>16.67%</td>
+                    <td>1 - 4</td>
+                </tr>
+            </table>
+            <h4 class="sub-section" id="orca-tooth-item">Orca Tooth</h4>
+            <img src="../../images/items/orca_tooth.png" alt="Orca Tooth Item" class="item-img">
+            <p>
+                The orca tooth is collectible/trophy item. Players can put it in item frames or keep it in storage. Aside from being
+                a collectible, it also serves as one of the items that is needed to perform the ritual in summoning the <a 
+                href="../bosses/nameless_depth.html" class="article-link">Nameless Depth</a>.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+            <p>
+                Orcas function the same as Minecraft's vanilla dolphins. They can give players dolphins grace to nearby players and
+                follow them around. They can also lead players to underwater structures if fed raw fish. They spawn in pairs, reflecting
+                real world behavior of orcas being social animals. They only spawn in pairs to reduce any lag from spawning too many
+                mobs at once.
+            </p>
+            <p>
+                If attacked, all nearby orcas and dolphins will become aggressive toward the player and begin attacking.
+                Orca attacks are especially deadly since they deal way more damage to players than dolphins do (2.25 hearts of damage
+                for dolphins, while orcas can deal 7.5 hearts).
+            </p>
+            <p>
+                Unlike with the majority of mobs added by Blue Depths, they cannot be bucketed or bred by the player. The only way to
+                keep an orca is by having it follow you and using a nametag on it to prevent it from despawning (keep in mind that the
+                given name by the nametag will not actually show on the orca like vanilla mobs).
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Future Plans</h3>
+            <p>
+                Since the orca remains the only mob that doesn't have much in terms of new features upon initial release, plans are
+                being made to add a new mechanic to the orcas so they feel more unique to dolphins. As of currently, there are no
+                plans on implementing breeding or the life cycle mechanic that other larger Blue Depths mobs have. The new mechanic
+                will be something completely different.
+            </p>
+            <p>
+                The date of when the orca will have it's new mechanic added still hasn't been decided. The current update roadmap only
+                has the final part of Roaring Rivers as something that will be coming up next (or already released depending on when
+                you read this article). The update after Roaring Rivers Part 2 has still not been decided yet, but it will be coming.
+                It is possible the update after Roaring Rivers will be when the orca receives the new feature, but it all depends if
+                the theme of the update has any relation to the orca.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.0 (Initial Release)</th>
+                    <td>
+                        <ul>
+                            <li>Added the orca</li>
+                            <li>Spawns in all oceans except warm oceans</li>
+                            <li>Items
+                                <ul>
+                                    <li>Orca Tooth</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/orca.png" alt="Orca" draggable="false" class="gallery-img">
+                    <figcaption>Orca swimming in the deep ocean.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="https://cdn.modrinth.com/data/h1VZfZYb/images/43275e3795d7cc41ab17354edeafc8065970a3cf.png" alt="Orca Showcase" draggable="false" class="gallery-img">
+                    <figcaption>Showcase image of the orca from modrinth</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/orca_tooth.png" alt="Orca tooth Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Orca tooth that can be dropped by the orca upon death
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -45,6 +45,23 @@ main {
     width: 85%;
 }
 
+caption {
+    caption-side: bottom;
+    color: #87ceeb;
+    text-align: center;
+}
+
+h4, h5 {
+    scroll-margin-top: 123px; /*Used for allowing links to properly display the destination correctly (because of the navbar)*/
+}
+
+.nav-article-cols {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    /*border: white solid 3px; /*For testing*/
+}
+
 /* -------------------------------------- Navigation Bar -------------------------------------- */
 .navbar {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -120,7 +137,7 @@ main {
 /*---- CSS for the links on navigation pages ----*/
 .nav-link a {
     text-decoration: none;
-    color: aqua;
+    color: #00b7eb;
     transition: all 0.3s ease; /* Controls speed and smoothness */
 }
 
@@ -240,6 +257,11 @@ table.chance-table {
 .chance-table th {
     background-color: #191970;
     color: aqua;
+}
+
+.chance-table li {
+    text-align: left;
+    padding-right: 0.5em;
 }
 
 .chance-col {

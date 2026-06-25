@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Tuna</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header id="header">
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Tuna</h2>
+        <aside class="info-box">
+            <h3>Tuna</h3>
+            <img src="../../images/mobs/tuna.png" alt="Blue Depths Tuna School Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                    <p><b>Health: </b></p>
+                    <ul>
+                        <li><b>Mature: </b>12 HP (6 hearts)</li>
+                        <li><b>Juvenile: </b>3 HP (1.5 hearts)</li>
+                        <li><b>Larva: </b>3 HP (1.5 hearts)</li>
+                    </ul>
+                    <p><b>Speed: </b>Medium</p>
+                    <p><b>Hit Box Size: </b></p>
+                    <ul>
+                        <li><b>Mature: </b>0.4 x 0.7 blocks (approximately)</li>
+                        <li><b>Juvenile: </b>0.3 x 0.5 blocks (approximately)</li>
+                        <li><b>Larva: </b>0.4 x 0.5 blocks (approximately)</li>
+                    </ul>
+                    <p><b>Rarity: </b>Uncommon</p>
+                <h4>Basic Info</h4>
+                    <p><b>Classification: </b>Fish</p>
+                    <p><b>Temperament: </b>Passive</p>
+                    <p><b>Behavior: </b>Ambient, Midwater fish</p>
+                    <p><b>Water Type: </b>Salt water</p>
+                <h4>Spawns In</h4>
+                    <ul>
+                        <li class="bd-link"><a href="../biomes/ocean.html">Oceans</a></li>
+                        <li class="bd-link"><a href="../biomes/cold_ocean.html">Cold Oceans</a></li>
+                        <li class="bd-link"><a href="../biomes/lukewarm_ocean.html">Lukewarm Oceans</a></li>
+                    </ul>
+                <h4>Usable Items (dropped items)</h4>
+                    <p><b>Juvenile:</b></p>
+                        <ul>
+                            <li>Tropical Fish</li>
+                            <li>Beetroot</li>
+                        </ul>
+                    <p><b>Larva:</b></p>
+                        <ul>
+                            <li>Wheat Seeds</li>
+                            <li>Beetroot</li>
+                        </ul>
+            </div>
+        </aside>
+
+        <p>
+            The tuna is a passive saltwater fish that spawns in all oceans except for frozen (deep and regular) and warm oceans. It is 
+            a great source of food and can be raised by the player from larva to a mature adult. It is meant to be a farmable mob,
+            similar to how they are farmable in real life. It is largely based on the atlantic bluefin tuna.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Tuna are uncommon mobs that spawn in schools of 4 in all nearly oceans, except for warm oceans and frozen oceans. The 
+                way tunas spawn naturally is by replacing some naturally spawning aquatic mob. In the case for all the oceans it
+                spawns in each cod has a chance to be replaced with a school of tuna. The table below shows the spawn rates of the 
+                tuna in the biomes they spawn in.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Ocean/Deep Ocean</td>
+                    <td>4% (Cod)</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Cold Ocean/Deep Cold Ocean</td>
+                    <td>4% (Cod)</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Lukewarm Ocean / Deep Lukewarm Ocean</td>
+                    <td>4% (Cod)</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                Tuna have 2 pools in their loot tables. The first pool only contains tuna fillets, which is guaranteed to drop in a
+                group of 2 to 4 fillets. The second pool contains tuna larva (item) and bonemeal, and these items can only be dropped
+                if the tuna is killed by a player. Below shows a table with the item drop chances:
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance (if killed by player)</th>
+                    <th>Chance (if not killed by player)</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Tuna Fillet</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>2 - 4</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bone meal</td>
+                    <td>83.33%</td>
+                    <td>0%</td>
+                    <td>0 - 1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Tuna Larva (item)</td>
+                    <td>16.67%</td>
+                    <td>0%</td>
+                    <td>1 - 3</td>
+                </tr>
+            </table>
+            <h4 class="sub-section" id="tuna-fillet-item">Tuna Fillet</h4>
+            <img src="../../images/items/tuna_fillet.png" alt="Tuna Fillet Item" class="item-img">
+            <p>
+                Tuna fillet is an item that is dropped by tuna, juvenile tuna and orcas, stackable up to 64 in one item slot. 
+                It has a 100% chance to be dropped by tuna, a 16.67% chance by orcas, and 100% chance by juvenile tuna upon death. 
+                Below are the food stats of the tuna fillet:
+            </p>
+            <ul>
+                <li>Nutrition: 3</li>
+                <li>Saturation: 2</li>
+            </ul>
+            <h5 class="suber-section">Cooking</h5>
+            <p>
+                The tuna fillet can only be cooked using the <a href="../blocks/deep_blue_grill.html" class="article-link">
+                Deep Blue Grill</a>. Like every other mob food item in Blue Depths, you can only cook the fillet as 1, 8, 16, or 64 
+                using either sticks (only if you want to cook one), coal, or charcoal as fuel. Below are images showing how to cook the 
+                various counts of tuna fillets:
+            </p>
+            <img src="../../images/recipes/tuna/1_tuna.png" alt="1 Tuna Steak Recipe" class="item-img" class="recipes">
+            <img src="../../images/recipes/tuna/8_tuna.png" alt="8 Tuna Steak Recipe" class="item-img" class="recipes">
+            <img src="../../images/recipes/tuna/16_tuna.png" alt="16 Tuna Steak Recipe" class="item-img" class="recipes">
+            <img src="../../images/recipes/tuna/64_tuna.png" alt="64 Tuna Steak" class="item-img" class="recipes">
+
+            <h4 class="sub-section" id="tuna-steak-item">Tuna Steak</h4>
+            <img src="../../images/items/tuna_steak.png" alt="Tuna Steak Item" class="item-img">
+            <p>
+                Tuna steak can be obtained when a player cooks <a href="#tuna-fillet-item" class="article-link">Tuna Fillet</a> in 
+                the <a href="../blocks/deep_blue_grill.html" class="article-link">Deep Blue Grill</a>. It is used as new source of food 
+                for the player, stackable up to 64 in one item slot. Below are the food stats of the tuna steak:
+            </p>
+            <ul>
+                <li>Nutrition: 8</li>
+                <li>Saturation: 13</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+            <p>
+                Tuna are passive mobs, meaning they do not attack the player. They are ambient fish that swim around midwater
+                in the various ocean biomes they inhabit. Because of their size they can't be transported via water buckets. 
+                Instead, the player must kill tuna and hope they drop tuna larva (item) and use that item to raise tuna to adulthood 
+                More information about doing this is found in the next section.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Life Cycles and Raising Tuna</h3>
+
+            <h4 class="sub-section" id="tuna-larva">Tuna Larva</h4>
+            <h5 class="suber-section" id="tuna-larva-item">Tuna Larva (Item)</h5>
+            <img src="../../images/items/tuna_larva.png" alt="Tuna Larva Item" class="item-img">
+            <p>
+                In order for the player to be able to raise tuna as either a farmable fish or as a pet, they cannot use a water bucket
+                because of the size of the tuna. Instead, the player must kill an adult tuna for a chance to get an item called tuna
+                larva. The player can then use that larva to spawn a tuna larva mob and either wait for it to grow or feed it to
+                accelerate growth. All the player has to do is simply place the tuna larva item down on the ground, preferably in some
+                body of water, or else the tuna larva mob will start flopping around an potentially die.
+            </p>
+
+            <h5 class="suber-section" id="tuna-larva-mob">Tuna Larva (mob)</h5>
+            <p>
+                Tuna larva are the first phase of a tuna's lifecycle. Like with every other baby/juvenile variants of the Blue Depths
+                mobs, they do not spawn naturally, they can only exist if a player (or blocks like dispensers or droppers) places a
+                <a href="#tuna-larva-item" class="article-link">Tuna Larva Item</a>. These tuna larva fish have the potential to grow
+                up and become a <a href="#juvenile-tuna" class="article-link">Juvenile Tuna</a>, the next phase in the life cycle of a
+                tuna. Physically, they are small fish with a color mix of blue and gray. They will never despawn.
+            </p>
+            <p>
+                For a tuna larva to grow up to become a <a href="#juvenile-tuna" class="article-link">Juvenile Tuna</a>, the
+                player has two options. The player can either wait a certain amount of time for the larva to grow all by itself, or
+                they can feed it wheat seeds to speed up the growth process, by taking a certain amount of time out of the remaining 
+                time left to grow. Unlike with vanilla mobs, Blue Depth mobs will not eat if you "use" an item on them, instead you 
+                must throw/drop the item close to them. The total time it takes for a larva to become a juvenile is 13.33 minutes
+                without player intervention.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the larva, meaning they want to prevent the larva from ever growing, all
+                the player has to do is drop beetroot near the larva. This effect is irreversible.
+            </p>
+
+            <p>Below shows a table on how each method accelerates the growth of the larva:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Wheat seeds</td>
+                    <td>Removes 80 seconds from remaining time</td>
+                    <td>10 seeds</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Beetroot</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>Tuna Larva do not drop anything upon death.</p>
+            
+
+            <h4 class="sub-section" id="juvenile-tuna">Juvenile Tuna</h4>
+
+            <p>
+                Juvenile tuna is the second phase in a tuna's lifecycle. Like the <a href="#tuna-larva-mob" class="article-link">
+                Tuna Larva</a>, juvenile tuna do not spawn naturally, they can only be obtained when a tuna larva grows up. Juvenile
+                tuna looks just like adult tuna, except they appear smaller. They can drop items upon death, but not nearly as much as
+                adult tunas can. These fish have to potential to grow into mature tuna by simply waiting or giving it food to
+                accelerate its growth. Juvenile tuna do not despawn like wild adult tuna do.
+            </p>
+
+            <p>
+                For a juvenile tuna to grow up to become an adult, the player has two options. The player can either wait a certain 
+                amount of time for the juvenile to grow all by itself, or they can feed it tropical fish to speed up the growth 
+                process, by taking a certain amount of time out of the remaining time left to grow. Unlike with vanilla mobs, Blue 
+                Depth mobs will not eat if you "use" an item on them, instead you must throw/drop the item close to them. The total 
+                time it takes for it to grow is 13.33 minutes without player intervention.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the juvenile tuna, meaning they want to prevent the juvenile from ever 
+                growing, all the player has to do is drop beetroot near the juvenile. This effect is irreversible.
+            </p>
+
+            <p>Below shows a table on how each method accelerates the growth of the juvenile:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Tropical Fish</td>
+                    <td>Removes 80 seconds from remaining time</td>
+                    <td>10 tropical fish</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Beetroot</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>
+                Juvenile tuna can drop 2 items, bone meal or tuna fillet. Upon death, it is guaranteed to drop 1 tuna fillet,
+                only if a player kills it. Similarly, it will only drop 1-2 bone meal (equal chance for both) if the player kills it. 
+                Below is a table that shows the item drop chances.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance (If killed by player)</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Tuna Fillet</td>
+                    <td>100%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bone meal</td>
+                    <td>
+                        100%
+                    </td>
+                    <td>
+                        1 - 2
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.0.0 (Initial Release)</th>
+                    <td>
+                        <ul>
+                            <li>Added the tuna</li>
+                            <li>Spawns in most oceans except for warm and frozen variants</li>
+                            <li>Items
+                                <ul>
+                                    <li>Tuna Larva</li>
+                                    <li>Tuna Fillet</li>
+                                    <li>Tuna Steak</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/tuna.png" alt="Duo Tuna Swimming" draggable="false" class="gallery-img">
+                    <figcaption>Two tuna swimming together in an ocean.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/tuna_larva.png" alt="Tuna Larva Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Tuna larva that can be obtained upon the death of a mature tuna. Used for beginning "breeding" process.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/tuna_fillet.png" alt="Tuna Fillet Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Tuna fillet item dropped by mature and juvenile tuna.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/tuna_steak.png" alt="Tuna Steak Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Tuna steak item that can be obtained by cooking tuna fillet in the Deep Blue Grill.
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

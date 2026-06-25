@@ -6,6 +6,9 @@ const imageDisplayed = document.querySelector("#displayed-img");
 const closeImgButton = document.querySelector("#close-img");
 const displayContainer = document.querySelector("#img-expand");
 
+//const navbar = document.querySelector("#header");
+//console.log(navbar.clientHeight);
+
 ////// Gallery Selection Code ///////
 
 // Enlarge image
