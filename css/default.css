@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+.nameless-depth {
+    background-image: url("../images/boss_background.png"); /*Adds image to the background*/
+}
+
 header {
     background-color: #000036;
     margin-bottom: 1em;
@@ -130,6 +134,7 @@ h4, h5 {
     margin: 0 auto; /* Center image */
     border: black solid 0.2em;
     border-radius: 0.1em;
+    max-width: 80%;
 }
 
 /*------------- Navigation Page Stuff -------------*/
@@ -183,6 +188,19 @@ h4, h5 {
 
 .article-link:hover {
     color: aqua;
+}
+
+.image-float-right {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    max-width: 35%;
+}
+
+.image-center {
+    display: block;
+    margin: 0 auto;
 }
 
 /*---- Info Box ----*/
@@ -383,6 +401,41 @@ table.history-table {
 #close-img:hover {
     color: #1e90ff;
     border-color: #1e90ff;
+}
+
+/*---- Reveal Spoiler Stuff ----*/
+
+/*Spoiler content*/
+.spoiler-content {
+    background-color: rgba(65,102,245, 0.25);
+    margin-top: 0.4em;
+    padding: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border-radius: 0.3em;
+    min-height: 100%;
+
+    /*Prents content from leaking outside of container*/
+    overflow:hidden; 
+    word-wrap:break-word
+}
+
+/*Button stuff*/
+#reveal-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    border: #00b7eb solid 0.3em;
+    border-radius: 0.4em;
+    background-color: transparent;
+    color: #00b7eb;
+    padding: 0.5em;
+
+    transition: all 0.3s ease; /* Controls speed and smoothness */
+}
+
+#reveal-button:hover {
+    color: black;
+    background-color: #00b7eb;
 }
 
 

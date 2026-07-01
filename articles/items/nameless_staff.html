@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Nameless Staff</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" async></script>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <h2 class="article-title">The Nameless Staff</h2>
+
+        <p>
+            The Nameless Staff is a powerful weapon that is exclusively dropped by the <a href="../bosses/nameless_depth.html"
+            class="article-link">Nameless Depth</a> when defeated.
+        </p>
+
+        <p>
+            Information on the Nameless Staff may contain spoilers for the Nameless Depth boss fight. If you want to avoid spoilers, 
+            check out the information after defeating the boss. If you've already defeated the boss, or you don't care and just wanna 
+            see the details of the staff item, press the button below:
+        </p>
+
+        <button id="reveal-button" class="item-button">Reveal Item Details</button>
+
+        <div class="spoiler-content hidden-display">
+            <img 
+            src="../../images/items/nameless_staff.png" 
+            alt="Blue Depths Nameless Staff" 
+            style="max-height: 400px;"
+            class="image-float-right">
+
+            <section>
+                <h3 class="article-section">Use</h3>
+                <p>
+                    The Nameless Staff is a weapon that can be used on all living creatures. It is a 3D staff that can be used to shoot
+                    out a projectile in the form of the Nameless Depth, dealing damage and leaving behind an area of effect cloud that
+                    will cause harm to players and other living creatures. After the player uses the staff, they have a 10 second cooldown
+                    before they can use it again. If the player attempts to use the staff while it's cooldown is still in effect, they
+                    will receive a message alerting them that the staff is still in cooldown mode along with the amount of time left until
+                    the cooldown is complete.
+                </p>
+
+                <p>
+                    Below lists the information of the projectile the Staff launches:
+                </p>
+
+                <ul style="line-height: 2em;">
+                    <li><b>Attack Type: </b>Projectile</li>
+                    <li><b>Stops at: </b> Mobs and Blocks</li>
+                    <li><b>Attack damage:</b>
+                        <ul>
+                            <li><b>Players: </b>4 HP (2 Hearts) (True Damage)
+                                <ul><li><b>True Damage: </b>Damage that ignores the protection given by armor and potion effects.</li></ul>
+                            </li>
+                            <li><b>Non-player mobs: </b>15 HP (7.5 Hearts)</li>
+                        </ul>
+                    </li>
+                    <li><b>Attack Debuffs: </b>
+                        <ul>
+                            <li>Blindness (3 seconds)</li>
+                            <li>Slowness II (4 seconds)</li>
+                        </ul>
+                    </li>
+                    <li><b>Projectile top distance: </b> 64 blocks</li>
+                    <li><b>Projectile speed: </b>10 blocks per second</li>
+                </ul>
+
+                <p>
+                    Additionally, the player who uses the Nameless Staff (the caster) is immune to the Staff's projectile for about 5.5
+                    seconds to prevent accidentally damaging themselves with the staff. Also, when the staff hits a mob or player, the
+                    projectile will not dissipate immediately, it will still live for about 0.25 seconds.
+                </p>
+
+                <p>
+                    Below shows the stats for the Ink Cloud that the projectile leaves behind when colliding with a block, mob, player, or 
+                    when it reaches it's top distance and dissipates:
+                </p>
+
+                <ul style="line-height: 2em;">
+                    <li><b>Attack Type: </b>Lingering Area of Effect</li>
+                    <li><b>Attack Duration: </b>8 seconds</li>
+                    <li><b>Area of Effect Radius: </b>4 blocks</li>
+                    <li><b>Debuffs to players/mobs:</b>
+                        <ul>
+                            <li>Blindness (4 seconds)</li>
+                            <li>Wither I (6 seconds)</li>
+                            <li>Weakness I (4 seconds)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>
+                    Please note that the debuffs the Ink Cloud applies to the player/mobs will be applied every second that the player/mob
+                    is within the radius of the Ink Cloud, so it is best that you try and leave the cloud in order to escape the
+                    constant debuffs.
+                </p>
+
+                <p>
+                    Additionally, if the caster of the projectile for the Nameless Staff is within a 5 block radius AND if they are within
+                    the 5.5 second duration of immunity to the projectile talked about earlier, the caster will receive immunity to the 
+                    cloud's effects for 3 seconds, to allow them to move out of the way quickly. This is given so the caster isn't punished 
+                    for using the staff so close either on accident or if they are in close combat.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="article-section">Obtaining The Nameless Staff</h3>
+
+                <p>
+                    The Nameless Staff can only be obtained by defeating the <a href="../bosses/nameless_depth.html" class="article-link">
+                    Nameless Depth</a>. The boss is guaranteed to drop at least 1 staff, however it can drop an extra staff per player
+                    that was present when the boss was summoned, up to a maximum of 4 staffs.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="article-section">History</h3>
+                <h4>Development History</h4>
+                <table class="history-table">
+                    <tr>
+                        <th>Datapack Version</th>
+                        <th>Addition/Change</th>
+                    </tr>
+
+                    <tr>
+                        <td class="history-col">1.0.0 (Initial release)</th>
+                        <td>Added the Nameless Staff as an item drop for the Nameless Depth boss</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

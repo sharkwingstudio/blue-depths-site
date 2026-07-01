@@ -5,6 +5,8 @@ const galleryImages = document.querySelectorAll('.gallery-img');
 const imageDisplayed = document.querySelector("#displayed-img");
 const closeImgButton = document.querySelector("#close-img");
 const displayContainer = document.querySelector("#img-expand");
+const revealButton = document.querySelector("#reveal-button");
+const spoilerContent = document.querySelector(".spoiler-content");
 
 //const navbar = document.querySelector("#header");
 //console.log(navbar.clientHeight);
@@ -38,8 +40,37 @@ function closeImage() {
     displayContainer.classList.toggle("hidden-display");
 }
 
+
+////// Reveal Hidden Content Code ///////
+function revealContent() {
+    
+    // Toggle the hidden class
+    spoilerContent.classList.toggle("hidden-display");
+
+    ////// Change the button's text
+
+    //// Boss details button
+    // If spoiled content is revealed for boss
+    if (!spoilerContent.classList.contains("hidden-display") && !revealButton.classList.contains("item-button")) {
+        revealButton.textContent = "Hide Boss Details"
+    }
+    else if (spoilerContent.classList.contains("hidden-display") && !revealButton.classList.contains("item-button")) {
+        revealButton.textContent = "Reveal Boss Details"
+    }
+
+    //// Item details button
+    // If spoiled content is revealed for item
+    else if (!spoilerContent.classList.contains("hidden-display") && revealButton.classList.contains("item-button")) {
+        revealButton.textContent = "Hide Item Details"
+    }
+    else {
+        revealButton.textContent = "Reveal Item Details"
+    }
+}
+
 ////// Event Listeners ///////
 
+/// Gallery Stuff
 // Add event listener to gallery images
 if (imageDisplayed) { // Just in case current page doesn't use gallery with image expansion
     galleryImages.forEach(image => {
@@ -48,8 +79,13 @@ if (imageDisplayed) { // Just in case current page doesn't use gallery with imag
         });
     });
 }
-
 // Add event listener to the close window button
 if (closeImgButton) {
     closeImgButton.addEventListener("click", closeImage);
+}
+
+
+/// Reveal Spoiler Stuff
+if (revealButton) {
+    revealButton.addEventListener("click", revealContent);
 }
