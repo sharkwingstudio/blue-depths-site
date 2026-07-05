@@ -1,16 +1,21 @@
 
 /* -------------------------------------- Default CSS Items -------------------------------------- */
-body {
+
+html, body {
+    /*Mobile Fix*/
+    margin: 0; /*Removes spacing between the sides*/
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../images/background.png"); /*Adds image to the background*/
     background-attachment: fixed; /*Prevents the image from moving when scrolling through the page*/
-    color: aquamarine;
-    margin: 0; /*Removes spacing between the sides*/
+
+    min-height: 100vh;
+}
+body {
     height: 100%;
+    color: aquamarine;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .nameless-depth {
@@ -36,6 +41,7 @@ header {
     text-align: center;
     border-radius: 0.2em;
     margin: 0; /*Removes the spacing from the top of the h1 to the top of the screen*/
+    margin-bottom: 0.3em;
 }
 
 main {
@@ -71,16 +77,25 @@ h4, h5 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     border-radius: 0.2em;
+
+    /*Mobile fixes*/
+    border-top: 0.1em solid white;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .navbar ul {
-    border-top: 0.1em solid white;
+    /*overflow: hidden; /*Prevents list items from spilling out of the container*/
+    
     list-style-type: none;
-    overflow: hidden; /*Prevents list items from spilling out of the container*/
-    display: flex; /*Allows the navigation items to display side by side*/
-    justify-content: center; /*Centers navigation items*/
+    display: inline-flex; /*Allows the navigation items to display side by side*/
+    flex-wrap: nowrap;
+
+    justify-content: flex-start; /* important */ /*Centers navigation items*/
     padding: 0; /*Removes the left padding so that the container actually centers the nav items*/
-    margin-bottom: 0;
+    margin: 0;
+    width: max-content; /* important */
 }
 
 .navbar ul li a {
