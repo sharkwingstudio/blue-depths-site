@@ -1,14 +1,17 @@
 
 /* -------------------------------------- Default CSS Items -------------------------------------- */
+* {
+    box-sizing: border-box;
+}
 
 html, body {
     /*Mobile Fix*/
     margin: 0; /*Removes spacing between the sides*/
+    padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../images/background.png"); /*Adds image to the background*/
     background-attachment: fixed; /*Prevents the image from moving when scrolling through the page*/
-
     min-height: 100vh;
 }
 body {
@@ -52,7 +55,7 @@ main {
     border-radius: 0.5em;
     line-height: 1.5em;
     margin-bottom: 2em; /* Apply a margin fix to the bottom after initial margin is set for centering */
-    width: 85%;
+    width: 90%;
 }
 
 caption {
@@ -332,7 +335,12 @@ table.history-table {
 /*---- Gallery Stuff ----*/
 .gallery-container {
     width: 100%;
-    overflow: auto;
+
+    /*Mobile fix*/
+    overflow: visible;
+    /*Center image horizontally*/
+    margin: auto;
+    text-align: center; /*Center contents*/
 }
 
 .gallery-selection {
@@ -340,10 +348,13 @@ table.history-table {
     display: inline-block; /*Allows non-leaking content, resize, and displaying side-by-side*/
     vertical-align: top; /*Prevents selection from appearing lower than another due to inline-block*/
     max-width: 20%; /*Allows the container to not take up the entire width of the parent container*/
-    height: 300px;
     border: aqua solid 0.1em;
     border-radius: 0.2em;
     padding: 1.2em;
+
+    /*Mobile fixes*/
+    min-height: 300px;
+    height: auto;
 }
 
 .gallery-selection img {
@@ -360,6 +371,14 @@ table.history-table {
 
 .gallery-selection img:hover {
     transform: scale(1.05);
+}
+
+/*Mobile fix: so cards don’t stay squeezed at 20% width on small screens*/
+@media (max-width: 700px) {
+    .gallery-selection {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 /*---- Image Expand Stuff ----*/
