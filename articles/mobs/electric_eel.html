@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Electric Eel</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" defer></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header>
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Electric Eel</h2>
+        <aside class="info-box">
+            <h3>Electric Eel</h3>
+            <img src="../../images/mobs/electric_eel.png" alt="Blue Depths Electric Eel Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                <p><b>Health: </b>8 HP (4 hearts)</p>
+                <p><b>Speed: </b>Medium</p>
+                <p><b>Hit Box Size: </b> 1 block (approximately)</p>
+                <p><b>Rarity: </b>Rare</p>
+                <h4>Basic Info</h4>
+                <p><b>Classification: </b>Fish</p>
+                <p><b>Temperament: </b>Impartial</p>
+                <p><b>Behavior: </b>Bottom Dweller, Hazardous</p>
+                <p><b>Water Type: </b>Fresh water</p>
+                <h4>Spawns In</h4>
+                <p class="bd-link"><a href="../biomes/rivers.html">Rivers</a></p>
+                <h4>Usable Items</h4>
+                <ul>
+                    <li>Water Bucket</li>
+                </ul>
+            </div>
+        </aside>
+
+        <p>
+            The electric eel is a rare fresh water fish that provides a hazard to the player. It drops a item that is needed to craft
+            the <a href="#electrode" class="article-link">Electrode</a> block and the mob itself is essential when using the electrode.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Electric eels are rare solitary fish that spawn exclusively in rivers. The way they spawn naturally is by
+                replacing some naturally spawning aquatic mob. In rivers, each salmon has a chance to be replaced with an electric eel. 
+                The table below shows the spawn rates of the electric eel in the biome it spawns in.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">River</td>
+                    <td>5% (Salmon)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                Electric eels can drop 2 items, bone meal or the electric eel (item). Upon death, it is guaranteed to drop 1 electric eel 
+                (item), only if a player kills it. Similarly, it will only drop 1-2 bone meal (equal chance for both) if the player kills 
+                it. Below is a table that shows the item drop chances.
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance (If killed by player)</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Electric Eel</td>
+                    <td>100%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bone meal</td>
+                    <td>
+                        100%
+                    </td>
+                    <td>
+                        1 - 2
+                    </td>
+                </tr>
+            </table>
+            <h4 class="sub-section" id="electric-eel-item">Electric Eel (Item)</h4>
+            <img src="../../images/items/electric_eel_item.png" alt="Electric Eel Item" class="item-img">
+            <p>
+                Electric eel (item) is an item that is exclusively dropped by the electric eel, stackable up to 64 in one item slot. 
+                It has a 100% chance to be dropped by the electric eel if the player kills it. Below are the food stats of the electric
+                eel:
+            </p>
+            <ul>
+                <li>Nutrition: 2</li>
+                <li>Saturation: 0.4</li>
+                <li><b>Effects:</b>
+                    <ul><li>Instant Damage I</li></ul>
+                </li>
+            </ul>
+            <p>
+                The electric eel (item) is also a necessary item used in crafting the <a href="#electrode" class="article-link">Electrode</a> 
+                which is explained further in this article.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+            <p>
+                The electric eel tends to stay at the bottom of the river bed during the day, hence why it is called a bottom dweller.
+                However, during the night it becomes more active.
+            </p>
+
+            <p>
+                If a player gets close to the eel, it won't attack or deal damage to the player. However, if the electric eel receives
+                damage that is not enough to kill it, it will release a burst of electric energy dealing true damage (damage not affected
+                by armor or potion effects) to all mobs within a certain range. Below are the attack stats of the the electric eel's
+                Electric Pulse:
+            </p>
+
+            <ul>
+                <li><b>Attack Cooldown: </b>None (only triggers if receiving damage)</li>
+                <li><b>Attack radius: </b>
+                    <ul>
+                        <li>5 blocks (Player)</li>
+                        <li>8 blocks (Non-player mobs)</li>
+                    </ul>
+                </li>
+                <li><b>Attack Type: </b>Area of Effect</li>
+                <li><b>Attack damage (True damage):</b>
+                    <ul>
+                        <li>Players (Survival or Adventure mode): 4 HP (2 hearts)</li>
+                        <li>Other mobs: 6 HP (3 hearts)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>
+                It is also worth noting that if an <a href="#electrode" class="article-link">Electrode</a> is within a 5 block radius when 
+                the electric eel does it's Electric Pulse attack, the electrode will be destroyed.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Obtaining Electric Eels</h3>
+            <h4 class="sub-section" id="electric-eel-bucket">Bucket of Electric Eel</h4>
+            <img src="../../images/items/electric_eel_bucket.png" alt="Electric Eel Bucket Item" class="item-img">
+            <p>
+                Because of their size they can actually be kept as pets and transported via water buckets. The player only 
+                needs to use a bucket of water near the electric eel to scoop it up, replacing their water bucket with a bucket of electric 
+                eel. Like with vanilla Minecraft mobs, right clicking the ground with the bucket of electric eel will place water and the 
+                electric eel, giving the player an empty bucket. When an electric eel is placed down via the bucket, it won't despawn, unlike 
+                wild, naturally spawning electric eel who will despawn when the player leaves the area.
+            </p>
+
+            <p>
+                Transporting the electric eel is also especially useful since they are necessary for making the Electrode work, which is
+                further elaborated on in the section below.
+            </p>
+        </section>
+
+        <section style="display: inline-block;">
+            <h3 class="article-section" id="electrode">Electrode Block</h3>
+            <img src="../../images/blocks/electrode.png" alt="Electrode Block" class="image-float-right">
+
+            <p>
+                The electrode is a redstone utility block exclusively added to Blue Depths. It has the ability to trigger redstone and
+                redstone contraptions if it receives an electric signal from the electric eel, which is simply done if there is an
+                electric eel within a 5 block radius of the electrode. This makes it an excellent way of having some kind of random redstone
+                triggers without having to rely on large redstone contraptions. The way to tell if the electrode has been triggered (and thus
+                can activate redstone) without needing to use redstone is by seeing if the holes of the electrode are lighting up. If you do
+                see a light coming out of the holes, the electrode can activate redstone.
+            </p>
+
+            <h4 class="sub-section">Crafting</h4>
+            <p>
+                In order to craft the electrode block, you will need to use the <a href="../blocks/marine_workbench.html" class="article-link"
+                >Marine Workbench</a> to craft the the block, as a regular crafting table will not work. Below lists the necessary items
+                needed to craft the electrode (not counting the Marine Workbench since these are the ingredients):
+            </p>
+
+            <ul>
+                <li class="nav-link"><a href="#electric-eel-item">Electric Eel (Item) x1</a></li>
+                <li>Redstone Torch x1</li>
+                <li>Iron Ingot x4</li>
+                <li>Cobbled Deepslate x1</li>
+                <li>Lighting Rod x2</li>
+            </ul>
+
+            <p>
+                Once you have all the ingredients needed, you must place the items in this pattern INSIDE the Marine Workbench to craft the
+                electrode:
+            </p>
+            <img src="../../images/recipes/electrode_recipe.png" alt="Electrode Crafting Recipe" class="item-img">
+
+            <h4 class="sub-section">Utility</h4>
+
+            <p>
+                Besides what was already said in the introductory part of the Electrode, there are a few more things to note. As already
+                stated, the electrode will activate if an electric eel is within 5 block radius, which will be indicated by the holes of
+                the electrode lighting up. When active, the electrode will be able to activate any redstone or redstone contraption it is
+                connected to (pretty much any redstone/redstone contraption next to it). If the electric eel leaves that 5 block radius,
+                the electrode will deactivate, and any redstone connected to it will become inactive.
+            </p>
+
+            <p>
+                It is worth noting that if an electric eel receives damage that doesn't immediately kill the electric eel within a 5 block
+                radius of the electrode, the electrode will become overloaded and explode. The explosion itself won't deal damage to any
+                player or mob, and it will drop the electrode as an item after it explodes.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.2.0 (Roaring Rivers Part 2: Shocking Snap)</th>
+                    <td>
+                        <ul>
+                            <li>Added the electric eel
+                                <ul>
+                                    <li>Spawns exclusively in rivers</li>
+                                    <li>Items
+                                        <ul>
+                                            <li>Bucket of Electric Eel</li>
+                                            <li>Electric Eel Item</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Added the Electrode</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/electric_eel.png" alt="Electric Eeel" draggable="false" class="gallery-img">
+                    <figcaption>An electric eel swimming in a river.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/electric_eel_item.png" alt="Electric Eel Item" draggable="false" class="gallery-img">
+                    <figcaption>Electric eel item that the eel drops upon being killed</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/electric_eel_bucket.png" alt="Electric Eel Bucket" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Bucket of electric eel the player can obtain by scooping an electric eel up with a bucket of water.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/blocks/electrode.png" alt="Electrode" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Electric Eel block that can be crafted using the Marine Workbench.
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Google Forms</a></li>
+            <li><a href="https://discord.gg/ftX6Zuj4x" target="_blank">Discord</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

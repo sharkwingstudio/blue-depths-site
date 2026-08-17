@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Depths: Crocodile</title>
+    <link rel="stylesheet" href="../../css/default.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../../images/gw_shark_tooth.png">
+    <!-- Javascript file-->
+    <script src="../../script.js" defer></script>
+</head>
+<body>
+    <!-- Image Expand Container -->
+    <div id="img-expand" class= "hidden-display">
+        <div class="img-contents">
+            <button id="close-img">Close</button>
+            <img alt="Displayed Gallery Image" id="displayed-img">
+        </div>
+    </div>
+
+    <!------------Rest of the Code------------->
+    <header id="header">
+        <h1 class="main-title">Blue Depths Wiki</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../mob_nav.html">Mobs</a></li>
+                <li><a href="../../blocks_nav.html">Blocks</a></li>
+                <li><a href="../../item_nav.html">Items</a></li>
+                <li><a href="../../boss_nav.html">Bosses</a></li>
+                <li><a href="../../biomes_nav.html">Biomes</a></li>
+                <li><a href="../../commands_nav.html">Commands</a></li>
+                <li><a href="../../update_nav.html">Updates</a></li>
+                <li><a href="../../compatibility.html">Compatibility</a></li>
+                <li><a href="../../other_nav.html">Miscellaneous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h2 class="article-title">Crocodile</h2>
+        <aside class="info-box">
+            <h3>Crocodile</h3>
+            <img src="../../images/mobs/crocodile.png" alt="Blue Depths Crocodile Photo">
+            <div class="info-section">
+                <h4>Stats</h4>
+                    <p><b>Health: </b></p>
+                        <ul>
+                            <li><b>Mature: </b>20 HP (10 hearts)</li>
+                            <li><b>Hatchling: </b>7 HP (3.5 hearts)</li>
+                            <li><b>Egg: </b>0.9 HP (0.45 hearts)</li>
+                        </ul>
+                    <p><b>Attack Strength:</b> 9 (4.5 hearts) (Adult only)</p>
+                    <p><b>Speed:</b></p>
+                        <ul>
+                            <li><b>Mature:</b> Slow</li>
+                            <li><b>Hatchling: </b>Medium</li>
+                        </ul>
+                    <p><b>Hit Box Size: </b></p>
+                        <ul>
+                            <li><b>Mature:</b> 0.98 x 0.49 (approximately)</li>
+                            <li><b>Hatchling: </b>0.28 x 0.84 (approximately)</li>
+                        </ul>
+                    <p><b>Rarity:</b> Common</p>
+                <h4>Basic Info</h4>
+                <p><b>Classification: </b>Reptile</p>
+                <p><b>Temperament: </b>Aggressive</p>
+                <p><b>Behavior: </b>Predator, aggressor, dangerous</p>
+                <p><b>Water Type: </b>Freshwater</p>
+                <h4>Spawns In</h4>
+                <ul>
+                    <li class="bd-link"><a href="../biomes/rivers.html">Rivers</a></li>
+                </ul>
+                <h4>Usable Items (dropped items)</h4>
+                <p><b>Hatchling:</b></p>
+                        <ul>
+                            <li class="bd-link"><a href="../mobs/lm_bass.html#raw-largemouth-bass-item">Raw Largemouth Bass</a></li>
+                            <li class="bd-link"><a href="../mobs/bluegill.html#raw-bluegill-item">Raw Bluegill</a></li>
+                            <li>Salmon</li>
+                            <li>Beetroot</li>
+                        </ul>
+                <p><b>Egg:</b> Coal</p>
+            </div>
+        </aside>
+
+        <p>
+            Crocodiles are the most aggressive creature in Blue Depths. They will slowly creep up on players and may even lunge straight at
+            them, dealing devastating damage. They can be raised by the player and even be used to craft special armor.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <section>
+            <h3 class="article-section">Spawning</h3>
+            <p>
+                Crocodiles spawn exclusively in rivers. The way they spawn naturally is by replacing some naturally 
+                spawning aquatic mob. In the case for rivers, there is a chance that a salmon can be replaced by a crocodile. The table below 
+                shows the spawn rates of the crocodile in the biome it spawns in.
+            </p>
+            <table class="chance-table">
+                <caption>
+                    Each salmon has an 8% chance to be replaced with a Predator. The creatures that are part of this Predator pool are 
+                    bull sharks and crocodiles, each of which have their own separate chance of being chosen to spawn from this Predator pool.
+                </caption>
+                <tr>
+                    <th>Biome</th>
+                    <th>Spawn Chance (Replacement Chance)</th>
+                    <th>Group Size</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">River</td>
+                    <td>8% (Salmon) &rarr; 70% (Crocodile)</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Items</h3>
+            <h4 class="sub-section">Item drop chances</h4>
+            <p>
+                Crocodiles have 4 possible items it can drop upon death. It can drop a Crocodile Egg, Crocodile Tooth, Crocodile Leather and 
+                salmon. When the crocodile dies, it can drop 2 - 3 item "pools" in total, each item can be defined by something called a 
+                "roll", so there are a minimum of 2 rolls, and a maximum roll of 3. Below shows a table of the item drop chances:
+            </p>
+            <table class="chance-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Chance</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Crocodile Tooth</td>
+                    <td>26.07%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Crocodile Egg</td>
+                    <td>8.70%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Crocodile Leather</td>
+                    <td>34.78%</td>
+                    <td>1 - 2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Salmon</td>
+                    <td>30.43%</td>
+                    <td>1 - 3</td>
+                </tr>
+            </table>
+
+            <h4 class="sub-section" id="crocodile-tooth">Crocodile Tooth</h4>
+            <img src="../../images/items/crocodile_tooth.png" alt="Crocodile Tooth Item" class="item-img">
+            <p>
+                Crocodile teeth are items exclusively dropped by crocodiles. It can serve as both a collectible item and an ingredient for
+                crafting <a href="#crocodile-armor" class="article-link">Crocodile Armor</a> using the <a href="../blocks/marine_workbench.html"
+                class="article-link">Marine Workbench</a>.
+            </p>
+
+            <h4 class="sub-section" id="crocodile-leather">Crocodile Leather</h4>
+            <img src="../../images/items/crocodile_leather.png" alt="Crocodile Leather Item" class="item-img">
+            <p>
+                Crocodile leather are items exclusively dropped by crocodiles. It can serve as an ingredient for crafting <a 
+                href="#crocodile-armor" class="article-link">Crocodile Armor</a> using the <a href="../blocks/marine_workbench.html"
+                class="article-link">Marine Workbench</a>. It can also be used a regular Minecraft leather for things like crafting recipes
+                and more.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Behavior</h3>
+
+            <p>
+                Crocodiles are the most dangerous freshwater predators. Unlike other mobs added, the crocodile will always target the player
+                if they are within the crocodile's follow range which is 35 blocks. During the day, crocodiles will only slowly swim and
+                follow players if they are submerged in water. Otherwise, they will just stay near the bottom of the riverbed, waiting
+                around. If the crocodile is outside of water and on land during the day, it will ignore mostly ignore the player, as in it
+                won't follow them actively, but it may still <b>lunge</b> at the player if they are close by.
+            </p>
+
+            <p>
+                During the night, crocodiles will occasionally surface out of the water and go on to land, where they will actually follow
+                and attacks players.
+            </p>
+
+            <h4 class="sub-section">Lunge</h4>
+
+            <p>
+                Crocodiles have the ability to <b>lunge</b> at players who are within an 8 block radius of the crocodile. The lunge is not
+                exclusive to any particular situation (unless the crocodile was raised by the player, in which case it will never lunge
+                unless provoke, more information on that can be found in the next section). Since the lunge is not exclusive, the crocodile
+                can lunge at the player in any context, even if the player is on land during the day and the crocodile is in water, as long
+                as the crocodile is close enough to the player. This lunge is quite fast, so it is important to be vigilant and get out of
+                the crocodile's way when it lunges, otherwise it may just kill the player. When the crocodile lunges, it will emit a roar and
+                particles of wind (and bubbles if the crocodile is in water) as it launches itself in the direction of the player. The crocodile
+                will never lunge at players in creative or spectator mode.Below are the stats for the lunge:
+            </p>
+
+            <ul>
+                <li><b>Attack Cooldown: </b>8 seconds</li>
+                <li><b>Attack radius: </b>8 blocks</li>
+                <li><b>Attack Type: </b>Projectile (itself)</li>
+                <li><b>Stops at: </b>
+                    <ul>
+                        <li>Players (Survival or Adventure)</li>
+                        <li>Solid Blocks</li>
+                    </ul>
+                </li>
+                <li><b>Attack damage:</b> 18 HP (9 hearts) (Players in survival or adventure mode)</li>
+                <li><b>Projectile top distance: </b> 10 blocks</li>
+                <li><b>Projectile speed:</b>
+                    <ul>
+                        <li><b>In water:</b> 10 blocks per second</li>
+                        <li><b>In air:</b> 7 blocks per second</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="article-section">Life Cycles and Raising Crocodiles</h3>
+
+            <h4 class="sub-section" id="crocodile-egg-item">Crocodile Egg (Item)</h4>
+            <img src="../../images/items/crocodile_egg.png" alt="Crocodile Egg Item" class="item-img">
+            <p>
+                In order for the player to be able to raise crocodiles, they cannot use a water bucket due to their size. 
+                Instead, the player must kill an adult crocodile for a chance to get an item called the Crocodile Egg. The 
+                player can place this egg item onto the ground or in a body of water and wait for the egg to hatch.
+            </p>
+
+            <h5 class="sub-section" id="crocodile-egg-entity">Crocodile Egg (Entity)</h5>
+
+            <p>
+                The crocodile egg is the first phase of a crocodile's lifecycle. Like with every other baby/juvenile variants of the Blue 
+                Depths mobs, they do not spawn naturally, they can only exist if a player (or blocks like dispensers or droppers) places a
+                <a href="#crocodile-egg-item" class="article-link">Crocodile Egg (Item)</a>. These eggs have the potential to grow up and 
+                become a <a href="#crocodile-hatchling" class="article-link">Crocodile Hatchling</a>, the next phase in the life cycle of a
+                crocodile. It looks like a simple white egg-like block. They will never despawn unless they are either
+                killed by the player.
+            </p>
+            <p>
+                Unlike most other life-cycle mobs/entities from Blue Depths, the crocodile egg can only grow into <a 
+                href="#crocodile-hatchling" class="article-link">Crocodile Hatchling</a> through the passage of time. There are no items
+                that can be thrown at the eggs to speed up their growth process. The eggs will take 13:20 minutes to hatch.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the egg, meaning they want to prevent the eggs from ever hatching, all
+                the player has to do is drop coal near the egg. This effect is irreversible.
+            </p>
+
+            <p>Below shows a table on how each method accelerates the growth of the crocodile egg:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Coal</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>The egg does not drop anything upon death. It will also never despawn.</p>
+
+
+            <h4 class="sub-section" id="crocodile-hatchling">Crocodile Hatchling</h4>
+
+            <p>
+                The crocodile hatchling is the second phase in a crocodile's lifecycle. Like the <a href="#crocodile-egg-entity" 
+                class="article-link">Crocodile Egg</a>, crocodile hatchlings do not spawn naturally, they can only be obtained when a 
+                crocodile egg hatches. Crocodile hatchlings looks just like adult crocodiles, except they appear smaller. These 
+                have the potential to grow into mature crocodiles by simply waiting or giving it food to accelerate its growth. Crocodile hatchlings 
+                do not despawn like wild adult crocodiles do. Crocodile hatchlings are also completely passive towards players and will never
+                attack even if they are hit.
+            </p>
+
+            <p>
+                For a crocodile hatchling to grow up to become an adult, the player has two options. The player can either wait a certain 
+                amount of time for the hatching to grow all by itself, or they can feed it food to speed up the growth 
+                process, by taking a certain amount of time out of the remaining time left to grow. Unlike with vanilla mobs, Blue 
+                Depth mobs will not eat if you "use" an item on them, instead you must throw/drop the item close to them. The total 
+                time it takes for it to grow is 16:40 minutes of real time. Due to this long wait, it is recommended to just feed the 
+                hatching food to accelerate its growth.
+            </p>
+
+            <p>
+                If the player wishes to stunt the growth of the crocodile hatchling, meaning they want to prevent it from ever 
+                growing, all the player has to do is drop beetroot near it. This effect is irreversible.
+            </p>
+
+            <p>Below shows a table on how each method accelerates the growth of the hatchling:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Growth Progress</th>
+                    <th>Amount Required for Near-Instant Growth</th>
+                </tr>
+                <tr>
+                    <td class="chance-col">Natural Growth (Doing nothing)</td>
+                    <td>Growth progresses normally</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Bluegill (Item)</td>
+                    <td>Removes 1:05 minutes from remaining time</td>
+                    <td>16 bluegill</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Largemouth Bass (Item)</td>
+                    <td>Removes 1:20 minutes from remaining time</td>
+                    <td>13 largemouth bass</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Salmon (Item)</td>
+                    <td>Removes 50 seconds from remaining time</td>
+                    <td>20 salmon</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Beetroot</td>
+                    <td>Stops growth (irreversible)</td>
+                    <td>Not applicable</td>
+                </tr>
+            </table>
+
+            <p>Crocodile Hatchlings do not drop anything upon death. They will also never despawn naturally.</p>
+
+            <h4 class="sub-section">Player-raised Adult Crocodile</h4>
+
+            <p>
+                Once a hatchling becomes an adult crocodile, you are done with dealing with lifecycles. There is a  difference between
+                regular wild crocodile and player raised crocodile. It is important to know that these crocodiles do not actively attack or
+                lunge at players, they will remain neutral towards the player. However, this neutrality can be broken and cause the crocodile
+                to attack and lunge at players under two circumstances. The first being if the crocodile receives damage, if it does, it will
+                growl which angry particles hovering over it's head. The second is a little more complicated.
+            </p>
+
+            <p>
+                The crocodile can become aggressive towards players similarly to how bull sharks become aggressive, that is if players stick
+                too close to the crocodile for too long. But the restrictions are more tight and random. If a player stays within a 2 block
+                radius of the crocodile, it will have an timer of it becoming aggressive. If the player stays within 2 blocks for about 6
+                seconds, there is a 35% chance that the crocodile will immediately become aggressive, growling and emitting angry particles.
+                There is no warning like with the bull shark, it will just become aggressive in that moment. However, if the 35% chance fails,
+                the timer will be reset. If the player moves out of the 2 block radius, the timer will stop counting and decrement until it
+                reaches zero, and won't increment again if a player enters the radius again.
+            </p>
+
+            <p>
+                Other than that, player-raised crocodiles have the same stats and behavior as regular crocodile.
+            </p>
+
+        </section>
+
+        <section style="display: inline-block;">
+            <h3 class="article-section" id="crocodile-armor">Crocodile Armor</h3>
+
+            <img src="../../images/croc_armor_suit.png" alt="Player wearing crocodile armor" class="image-float-right-border">
+
+            <p>
+                Crocodile Armor is a special kind of armor that can only be crafted using the <a href="../blocks/marine_workbench.html"
+                class="article-link">Marine Workbench</a>. The materials needed to craft this armor are <a href="#crocodile-tooth" class="article-link">
+                Crocodile Teeth</a> and <a href="#crocodile-leather" class="article-link">Crocodile Leather</a>. This armor sits between armor
+                like gold/chainmail armor and iron amor in terms of protection. What makes this armor particularly special is the fact that each
+                armor piece has Thorns II applied to it, along with higher durability than armor like iron armor to better handle the added
+                durability weakness that Thorns applies.
+            </p>
+
+            <h4 class="sub-section">Crafting</h4>
+
+            <p>
+                As stated before, crocodile armor can only be crafted using the Marine Workbench, using a regular crafting table won't work. For
+                more information on the workbench click <a href="../blocks/marine_workbench.html" class="article-link">here</a>. Below shows a
+                table showing what each armor piece requires:
+            </p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Armor Piece</th>
+                    <th>Crocodile Leather Needed</th>
+                    <th>Crocodile Teeth Needed</th>
+                </tr>
+
+                <tr>
+                    <td class="chance-col">Helmet</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Chestplate</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Leggings</td>
+                    <td>5</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Boots</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td class="chance-col">Whole Set</td>
+                    <td>16</td>
+                    <td>8</td>
+                </tr>
+            </table>
+
+            <p>
+                Once you have all the ingredients needed, you must place the items in this pattern INSIDE the Marine Workbench to craft each
+                armor piece:
+            </p>
+
+            <h5 class="suber-section" id="crocodile-helmet">Crocodile Helmet</h5>
+            <img src="../../images/items/croc_armor/helmet.png" alt="Crocodile Helmet Item" class="item-img">
+            <img src="../../images/recipes/croc_amor/helmet.png" alt="Crocodile Helmet Recipe" class="item-img">
+
+            <h5 class="suber-section" id="crocodile-chestplate">Crocodile Chestplate</h5>
+            <img src="../../images/items/croc_armor/chestplate.png" alt="Crocodile Chestplate Item" class="item-img">
+            <img src="../../images/recipes/croc_amor/chestplate.png" alt="Crocodile Chestplate Recipe" class="item-img">
+
+            <h5 class="suber-section" id="crocodile-leggings">Crocodile Leggings</h5>
+            <img src="../../images/items/croc_armor/leggings.png" alt="Crocodile Leggings Item" class="item-img">
+            <img src="../../images/recipes/croc_amor/leggings.png" alt="Crocodile Leggings Recipe" class="item-img">
+
+            <h5 class="suber-section" id="crocodile-boots">Crocodile Boots</h5>
+            <img src="../../images/items/croc_armor/boots.png" alt="Crocodile Boots Item" class="item-img">
+            <img src="../../images/recipes/croc_amor/boots.png" alt="Crocodile Boots Recipe" class="item-img">
+
+
+            <h4 class="sub-section">Armor Stats</h4>
+
+            <p>Below shows the statistics for each piece of crocodile armor:</p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Armor Piece</th>
+                    <th>Armor</th>
+                    <th>Armor toughness</th>
+                    <th>Durability</th>
+                    <th>Enchantability</th>
+                    <th>Knockback Resistance</th>
+                    <th>Default Enchantment(s)</th>
+                </tr>
+
+                <tr>
+                    <td class="chance-col">Helmet</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>350</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>Thorns II</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Chestplate</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>420</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>Thorns II</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Leggings</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>400</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>Thorns II</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Boots</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>325</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>Thorns II</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">History</h3>
+            <h4>Development History</h4>
+            <table class="history-table">
+                <tr>
+                    <th>Datapack Version</th>
+                    <th>Addition/Change</th>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.2.0 (Roaring Rivers Part 2: Shocking Snap)</th>
+                    <td>
+                        <ul>
+                            <li>Added the Crocodile
+                                <ul>
+                                    <li>Spawns exclusively in rivers</li>
+                                    <li>Items
+                                        <ul>
+                                            <li>Crocodile Egg</li>
+                                            <li>Crocodile Tooth</li>
+                                            <li>Crocodile Leather</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Added crocodile armor</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="article-section">Gallery</h3>
+            <div class="gallery-container">
+                <div class="gallery-selection">
+                    <img src="../../images/mobs/crocodile.png" alt="Crocodile Swimming" draggable="false" class="gallery-img">
+                    <figcaption>Crocodile swimming in a river.</figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/crocodile_egg.png" alt="Crocodile Egg Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Eggs can be obtained upon killing a mature crocodile to raise your own crocodile through its lifecycle.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/crocodile_tooth.png" alt="Crocodile Tooth Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Crocodile Teeth can be used to craft crocodile armor.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/crocodile_leather.png" alt="Crocodile Leather Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Crocodile Leather can be used as regular leather or to craft crocodile armor.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/croc_armor_suit.png" alt="Player Wearing Crocodile Armor Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Player equipped with a full set of crocodile armor.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/croc_armor/helmet.png" alt="Crocodile Helmet Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Crocodile Helmet Item.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/croc_armor/chestplate.png" alt="Crocodile Chestplate Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Crocodile Chestplate Item.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/croc_armor/leggings.png" alt="Crocodile Leggings Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Crocodile Leggings Item.
+                    </figcaption>
+                </div>
+                <div class="gallery-selection">
+                    <img src="../../images/items/croc_armor/boots.png" alt="Crocodile Boots Item" draggable="false" class="gallery-img">
+                    <figcaption>
+                        Crocodile Boots Item.
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
+            <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Google Forms</a></li>
+            <li><a href="https://discord.gg/ftX6Zuj4x" target="_blank">Discord</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

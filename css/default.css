@@ -64,7 +64,7 @@ caption {
     text-align: center;
 }
 
-h4, h5 {
+h3, h4, h5 {
     scroll-margin-top: 123px; /*Used for allowing links to properly display the destination correctly (because of the navbar)*/
 }
 
@@ -73,6 +73,17 @@ h4, h5 {
     vertical-align: top;
     width: 30%;
     /*border: white solid 3px; /*For testing*/
+}
+
+.trailer-vid {
+    border: 0.3em solid black;
+    border-radius: 0.2em;
+
+    /*Center Horizontally*/
+    display: block;
+    margin: auto;
+
+    margin-bottom: 1em;
 }
 
 /* -------------------------------------- Navigation Bar -------------------------------------- */
@@ -214,6 +225,15 @@ h4, h5 {
     margin-bottom: 0.5em;
     padding: 1em;
     max-width: 35%;
+}
+
+.image-float-right-border {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    max-width: 40%;
+    border: black solid 0.2em;
+    border-radius: 0.2em;
 }
 
 .image-center {

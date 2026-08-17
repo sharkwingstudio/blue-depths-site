@@ -76,16 +76,62 @@
             </p>
 
             <p>
-                These models do not go away by themselves and cannot be killed manually. In order to get rid of them, the player can
-                just type this into the chat box:
+                These models do not go away by themselves and cannot be killed manually. In order to get rid of them, there are two
+                commands that can be used.
             </p>
 
-            <p><strong>/function blue_depths:display/kill_display</strong></p>
+            <p><strong>/function blue_depths:display/kill_closest</strong></p>
+            <p><strong>/function blue_depths:display/kill_all</strong></p>
 
             <p>
-                Please note, that this will kill ALL displays that have been generated, so it is best to be careful with how you want
-                to display the models.
+                For the kill_closest command, only the model closest to the player executing the command will be cleaned up. For the
+                kill_all command, it will destroy ALL models, although some models in chunks that have not been generated will not be
+                killed.
             </p>
+        </section>
+
+        <section>
+            <h3 class="article-section">Destroy</h3>
+
+            <p>
+                The destroy command allows players to destroy or kill blocks and mobs added by Blue Depths. It mainly functions as a way to
+                get rid of the blocks and mobs incase something breaks with conflicting datapacks or maybe for uninstallation.
+            </p>
+
+            <p>To use the destroy command, simply type in the chat box:</p>
+
+            <p><b>/function blue_depths:destroy/...</b></p>
+
+            <p>
+                Make sure to not include the three dots at the end, it's just a place holder. Once you type that in, you will be given
+                different options for destroying, below lists those options and gives a description of what they do:
+            </p>
+
+            <ul>
+                <li><b>/function blue_depths:destroy/all_bd_blocks</b>
+                    <ul>
+                        <li>
+                            This command destroys all Blue Depths blocks existing in the world that are PLACED down, from chucks that
+                            have been generated. Once those blocks are destroyed, the block item will not be dropped, instead the items that
+                            are used to craft those blocks will be dropped instead.
+                        </li>
+                        <li><b>SPECIAL NOTE:</b> For the case of the electrode, the electric eel item will not be given back.</li>
+                    </ul>
+                </li>
+                <li><b>/function blue_depths:destroy/all_bd_mobs</b>
+                    <ul><li>
+                        This command will kill and destroy all Blue Depths mobs (including the boss) within currently generated chunks
+                    </li></ul>
+                </li>
+                <li><b>/function blue_depths:destroy/closest_bd_mob</b>
+                    <ul>
+                        <li>
+                            This command will kill ONLY the closest Blue Depth mob (including the boss) to the player who executed the
+                            command.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
         <section>
@@ -100,6 +146,20 @@
                 <tr>
                     <td class="history-col">1.1.0 (Roaring Rivers Part 1: Below the Surface)</th>
                     <td>Officially revealed the summon and display commands to the public and are working as intended</td>
+                </tr>
+
+                <tr>
+                    <td class="history-col">1.2.0 (Roaring Rivers Part 2: Shocking Snap)</th>
+                    <td>
+                        <ul>
+                            <li>
+                                Removed the kill_display command and replaced it with two commands, kill_closest and kill_all.
+                            </li>
+                            <li>
+                                Added the destroy command.
+                            </li>
+                        </ul>
+                    </td>
                 </tr>
 
                 <tr>
@@ -121,7 +181,8 @@
         <ul>
             <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
             <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Google Forms</a></li>
+            <li><a href="https://discord.gg/ftX6Zuj4x" target="_blank">Discord</a></li>
         </ul>
     </footer>
 </body>

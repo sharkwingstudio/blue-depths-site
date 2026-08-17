@@ -54,6 +54,9 @@
                     <li class="bd-link"><a href="../mobs/sturgeon.html">Sturgeon (Epic)</a></li>
                     <li class="bd-link"><a href="../mobs/archerfish.html">Archerfish (Rare)</a></li>
                     <li class="bd-link"><a href="../mobs/bull_shark.html">Bull shark (Uncommon)</a></li>
+                    <li class="bd-link"><a href="../mobs/bluegill.html">Bluegill (Common)</a></li>
+                    <li class="bd-link"><a href="../mobs/electric_eel.html">Electric Eel (Rare)</a></li>
+                    <li class="bd-link"><a href="../mobs/crocodile.html">Crocodile (Uncommon)</a></li>
                 </ul>
             </div>
         </aside>
@@ -63,7 +66,8 @@
             <p>
                 Rivers have received a major upgrade in terms on what aquatic mobs spawn inside them. The way these new mobs spawn is
                 by randomly replacing a specific vanilla mob that naturally spawn. For the case of rivers, the salmon is the mob that 
-                has a chance to be replaced by the new Blue Depths mobs. Below shows a table of the chance of a salmon being replaced
+                has a chance to be replaced by the new Blue Depths mobs. On top of that, some salmon will instead be replaced by a mob within
+                a certain pool instead of the mob being directly chosen instead. Below shows a table of the chance of a salmon being replaced
                 by a Blue Depths mob:
             </p>
             <h4 class="sub-section">Spawn Chance (Salmon)</h4>
@@ -74,9 +78,9 @@
                     <th>Group Size</th>
                 </tr>
                 <tr>
-                    <td class="chance-col">Largemouth Bass</td>
+                    <td class="chance-col">Common Passive Fish (Pool)</td>
                     <td>20%</td>
-                    <td>1</td>
+                    <td>Varies</td>
                 </tr>
                 <tr>
                     <td class="chance-col">Catfish</td>
@@ -84,8 +88,13 @@
                     <td>1</td>
                 </tr>
                 <tr>
-                    <td class="chance-col">Bull Shark</td>
+                    <td class="chance-col">Predator (Pool)</td>
                     <td>8%</td>
+                    <td>Varies</td>
+                </tr>
+                <tr>
+                    <td class="chance-col">Electric Eel</td>
+                    <td>5%</td>
                     <td>1</td>
                 </tr>
                 <tr>
@@ -99,21 +108,73 @@
                     <td>1</td>
                 </tr>
             </table>
+
+            <h5 class="suber-section">Common Fish (Pool)</h5>
+            <p>
+                Below shows which creatures are within the Common Fish Pool, and their chance of being selected to spawn if the pool has been
+                selected.
+            </p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Blue Depths Mob</th>
+                    <th>Spawn Chance</th>
+                    <th>Group Size</th>
+                </tr>
+
+                <tr>
+                    <td class="chance-col">Bluegill</td>
+                    <td>50%</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td class="chance-col">Largemouth Bass</td>
+                    <td>50%</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <h5 class="suber-section">Predator (Pool)</h5>
+            <p>
+                Below shows which creatures are within the Predator Pool, and their chance of being selected to spawn if the pool has been
+                selected.
+            </p>
+
+            <table class="chance-table">
+                <tr>
+                    <th>Blue Depths Mob</th>
+                    <th>Spawn Chance</th>
+                    <th>Group Size</th>
+                </tr>
+
+                <tr>
+                    <td class="chance-col">Bull Shark</td>
+                    <td>30%</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td class="chance-col">Crocodile</td>
+                    <td>70%</td>
+                    <td>1</td>
+                </tr>
+            </table>
         </section>
 
         <section>
             <h3 class="article-section">Ecosystem Details</h3>
             <p>
                 Rivers have received a huge upgrade with Blue Depths installed. What used to only contain 2 aquatic mobs now has a
-                total of 7 new and unique aquatic mobs.
+                total of 10 new and unique aquatic mobs.
             </p>
 
             <h4 class="sub-section">Ambient Mobs</h4>
             <p>
                 The new ambient mobs that add more diversity to rivers are the <a href="../mobs/catfish.html" class="article-link">
-                Catfish</a> and <a href="../mobs/lm_bass.html" class="article-link">Largemouth Bass</a>. These mobs add more
-                atmosphere to rivers, and are relatively common as well. This way, rivers aren't majorly populated by salmon and the
-                occasional squid.
+                Catfish</a>, <a href="../mobs/bluegill.html" class="article-link">Bluegill</a>, and <a href="../mobs/lm_bass.html" 
+                class="article-link">Largemouth Bass</a>. These mobs add more atmosphere to rivers, and are relatively common as well. This 
+                way, rivers aren't majorly populated by salmon and the occasional squid.
             </p>
 
             <h4 class="sub-section">Utility Mobs</h4>
@@ -126,6 +187,13 @@
                 Grill</a>.
             </p>
 
+            <p>
+                Rivers also contain <a href="../mobs/electric_eel.html" class="article-link">Electric Eels</a>. These creatures can drop
+                <a href="../mobs/electric_eel.html#electric-eel-item" class="article-link">Electric Eel (Item)</a> which can be used to craft 
+                the <a href="../mobs/electric_eel.html#electrode" class="article-link">Electrode</a> which can power redstone if an electric 
+                eel is within a 5 block radius of the electrode.
+            </p>
+
             <h4 class="sub-section">Predatory/Hostile Mobs</h4>
             <p>
                 Rivers have also become significantly more dangerous with the addition of the <a href="../mobs/archerfish.html" class="article-link">
@@ -135,10 +203,17 @@
             </p>
 
             <p>
-                The real danger comes from the <a href="../mobs/bull_shark.html" class="article-link">Bull Shark</a>. Although they 
+                Rivers can also spawn the <a href="../mobs/bull_shark.html" class="article-link">Bull Shark</a>. Although they 
                 are smaller and deal less damage than the <a href="../mobs/gw_shark.html" class="article-link">Great White Shark</a>, 
                 they are much more likely to attack the player unprovoked, and can be easily angered if the player sticks too close to 
                 them for too long.
+            </p>
+
+            <p>
+                The most dangerous predator is the <a href="../mobs/crocodile.html" class="article-link">Crocodile</a>. Unlike most other 
+                mobs, the crocodile will always target the player (unless they were hatched by an egg) without needing to be provoked. They 
+                have the potential to lunge at players and deal tremendous damage. If you defeat one, you can use it's item drops to craft
+                <a href="../mobs/crocodile.html#crocodile-armor" class="article-link">Crocodile Armor</a> or even raise a crocodile of your own.
             </p>
         </section>
 
@@ -150,6 +225,9 @@
                 <li class="bd-link"><a href="../mobs/sturgeon.html">Sturgeon</a></li>
                 <li class="bd-link"><a href="../mobs/archerfish.html">Archerfish</a></li>
                 <li class="bd-link"><a href="../mobs/bull_shark.html">Bull shark</a></li>
+                <li class="bd-link"><a href="../mobs/bluegill.html">Bluegill</a></li>
+                <li class="bd-link"><a href="../mobs/electric_eel.html">Electric Eel</a></li>
+                <li class="bd-link"><a href="../mobs/crocodile.html">Crocodile</a></li>
             </ul>
         </section>
 
@@ -181,6 +259,16 @@
                         </ul>
                     </td>
                 </tr>
+
+                <tr>
+                    <td class="history-col">1.2.0 (Roaring Rivers Part 2: Shocking Snap)</th>
+                    <td>
+                        <ul>
+                            <li>Added crocodile, bluegill, and electric eels</li>
+                            <li>Adjusted spawn rates of the Largemouth Bass and Bull Shark, who now spawn via certain spawn pools instead.</li>
+                        </ul>
+                    </td>
+                </tr>
             </table>
         </section>
     </main>
@@ -190,7 +278,8 @@
         <ul>
             <li><a href="https://www.planetminecraft.com/data-pack/blue-depths-ocean-ecosystem-expansion-datapack-sharks-jellyfish-boss-1-21-9/" target="_blank">Planet Minecraft Page</a></li>
             <li><a href="https://modrinth.com/datapack/blue-depths-ocean-ecosystem-expansion-datapack" target="_blank">Download on Modrinth</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Give Feedback and Suggestions</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_3-NI__9EVzw390CbgHJvgELaNKstVcrfBkY-t7P1QB0rFQ/viewform?usp=sharing&ouid=108954314766663498604" target="_blank">Google Forms</a></li>
+            <li><a href="https://discord.gg/ftX6Zuj4x" target="_blank">Discord</a></li>
         </ul>
     </footer>
 </body>
